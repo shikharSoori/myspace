@@ -26,6 +26,8 @@ body {
 
     height: 100%;
     padding: 48px 0;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -170,6 +172,9 @@ a.book-appointment {
   box-shadow: 0px 4px 4px 0px #00000040;
 }
 .checkbtn {
+  top: 23px;
+  position: absolute;
+  right: 10px;
   color: white;
   float: right;
 
@@ -401,6 +406,7 @@ a.book-appointment {
   background: #5e0296;
   padding-top: 100px;
   display: flex;
+  flex-wrap: wrap;
   iframe {
     width: calc(100% - 300px);
     position: absolute;
@@ -410,7 +416,7 @@ a.book-appointment {
     width: 33.33%;
   }
   .opening-hours {
-    width: 50%;
+    width: 70%;
     text-align: center;
     color: white;
     font-weight: 300;
@@ -466,6 +472,15 @@ a.book-appointment {
         }
       }
     }
+  }
+  .copyright {
+    text-align: center;
+    color: white;
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 520px) {
@@ -551,6 +566,11 @@ a.book-appointment {
       }
     }
   }
+  .mySlides {
+    img {
+      width: 100%;
+    }
+  }
 }
 
 @media screen and (min-width: 540px) and (max-width: 1024px) {
@@ -572,6 +592,11 @@ a.book-appointment {
         font-size: 24px;
       }
     }
+    img {
+      height: 200px;
+      margin-top: 50px;
+      object-fit: contain;
+    }
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1250px) {
@@ -584,25 +609,13 @@ a.book-appointment {
 
     padding: 0 40px;
   }
-}
-@media screen and (min-width: 540px) and (max-width: 850px) {
-  nav {
-    padding: 0 15px;
+  .mySlides {
     img {
-      height: 50%;
-      width: auto;
-    }
-    ul {
-      flex-direction: column;
-      li {
-        margin: 10px 0;
-        a {
-          color: white;
-        }
-      }
+      width: 300px;
     }
   }
 }
+
 @media screen and (max-width: 540px) {
   .slideshow-container {
     min-height: max-content;
@@ -680,7 +693,7 @@ a.book-appointment {
   }
   .footer {
     padding-top: 90px;
-    flex-direction: column-reverse;
+
     gap: 20px;
     iframe {
       width: 90%;
@@ -715,4 +728,138 @@ a.book-appointment {
       width: 100%;
     }
   }
+}
+
+@media screen and (min-width: 540px) and (max-width: 850px) {
+  nav {
+    padding: 0 15px;
+    img {
+      height: 50%;
+      width: auto;
+    }
+    ul {
+      flex-direction: column;
+      li {
+        margin: 10px 0;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+  .who-we-are {
+    .row {
+      flex-direction: column;
+      .column1 {
+        width: 100%;
+      }
+      .column2 {
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
+  }
+  .products {
+    padding-top: 60px;
+  }
+  .contact-us {
+    .contact-detail {
+    }
+    .contact-form {
+      width: 50%;
+      input {
+        width: 100% !important;
+      }
+    }
+  }
+  .footer {
+    padding-top: 100px;
+    iframe {
+      width: 85%;
+    }
+    .footer-first {
+      .opening-hours {
+        .title {
+          margin-bottom: 10px;
+        }
+        ul {
+          li {
+            margin-bottom: 5px;
+          }
+        }
+        width: 100%;
+      }
+    }
+    .footer-last {
+      .links {
+        width: 60%;
+      }
+    }
+    .company-logo {
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.card {
+  flex: 0 0 auto;
+  width: 244px; /* Adjust card width to fit 4 cards */
+  height: 200px;
+  margin-right: 20px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: transform 0.5s ease;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.card.blue {
+  background-color: blue;
+  color: white;
+  transform: scale(1.2); /* Make the highlighted card 20% bigger */
+}
+
+.active {
+  background-color: #0056b3;
 }

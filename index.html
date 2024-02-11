@@ -10,7 +10,35 @@
   <body>
     <nav>
       <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn"> Hello </label>
+      <label for="check" class="checkbtn">
+        <?xml version="1.0" encoding="utf-8"?>
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 18L20 18"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 12L20 12"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+          <path
+            d="M4 6L20 6"
+            stroke="#000000"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+      </label>
       <div class="logo">
         <img src="./logo.png" alt="MySpace Logo" />
       </div>
@@ -52,6 +80,18 @@
         <a class="next" onclick="plusSlides(1)">❯</a>
       </div>
     </section>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+      </div>
+      <button class="prev" onclick="prevSlide()">Previous</button>
+      <button class="next" onclick="nextSlide()">Next</button>
+    </div>
     <div class="who-we-are container">
       <div class="row">
         <div class="column1">
@@ -479,8 +519,57 @@
           </ul>
         </div>
       </div>
+      <div class="copyright">&copy; 2022 Copyrights Reserved</div>
     </section>
 
     <script src="script.js"></script>
+    <script>
+      const slider = document.querySelector(".slider");
+      const cards = document.querySelectorAll(".card");
+      const prevButton = document.querySelector(".prev");
+      const nextButton = document.querySelector(".next");
+      let currentIndex = 0;
+      const cardWidth = cards[0].offsetWidth + 20; // Including margin
+
+      function updateSlider() {
+        const newPosition = -currentIndex * cardWidth;
+        slider.style.transform = `translateX(${newPosition}px)`;
+
+        cards.forEach((card) => card.classList.remove("blue"));
+
+        // Calculate the index of the last visible card
+        const lastVisibleIndex = currentIndex + 3; // Display 4 cards fully
+
+        // Highlight the last visible card
+        cards[lastVisibleIndex].classList.add("blue");
+      }
+
+      function nextSlide() {
+        currentIndex++;
+        if (currentIndex > cards.length - 4) {
+          // Adjust to display 4 cards
+          currentIndex = 0;
+        }
+        updateSlider();
+        toggleActiveButton(nextButton, prevButton);
+      }
+
+      function prevSlide() {
+        currentIndex--;
+        if (currentIndex < 0) {
+          currentIndex = cards.length - 4; // Adjust to display 4 cards
+        }
+        updateSlider();
+        toggleActiveButton(prevButton, nextButton);
+      }
+
+      function toggleActiveButton(activeButton, inactiveButton) {
+        activeButton.classList.add("active");
+        inactiveButton.classList.remove("active");
+      }
+
+      // Initial slider update
+      updateSlider();
+    </script>
   </body>
 </html>

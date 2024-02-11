@@ -820,14 +820,7 @@ a.book-appointment {
   text-align: center;
 }
 
-.swiper-pagination {
-  margin-top: 20px;
-}
-
-.swiper-pagination-bullet {
-  background-color: #007bff;
-}
-
-.swiper-button-prev {
-  top: 0 !important;
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  content: none;* Change to the desired color */
 }

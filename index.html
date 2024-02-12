@@ -1,632 +1,606 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
 
-    <title>Document</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
-  <body>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <?xml version="1.0" encoding="utf-8"?>
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M4 18L20 18"
-            stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 12L20 12"
-            stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-          <path
-            d="M4 6L20 6"
-            stroke="#000000"
-            stroke-width="2"
-            stroke-linecap="round"
-          />
-        </svg>
-      </label>
-      <div class="logo">
-        <img src="./logo.png" alt="MySpace Logo" />
-      </div>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a class="book-appointment" href="#">Book Appointment</a></li>
-      </ul>
-    </nav>
-    <section class="hero-slider">
-      <div class="slideshow-container container">
-        <div class="mySlides fade">
-          <div class="text">
-            <h1>Turn your innovative ideas into reality</h1>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-            </p>
-          </div>
-          <img src="./HeroImage.png" />
-        </div>
+  <title>Document</title>
+</head>
 
-        <div class="mySlides fade">
-          <div class="text">Caption Two</div>
-          <img src="./HeroImage.png" />
-        </div>
-
-        <div class="mySlides fade">
-          <div class="text">Caption Three</div>
-          <img src="./HeroImage.png" />
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-      </div>
-    </section>
-    <div class="swiper-container container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <div class="card">
-            <h3>Card 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </div>
-        </div>
-        <!-- Add more slides here -->
-      </div>
-      <!-- Add Pagination -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+<body>
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check" class="checkbtn">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </label>
+    <div class="logo">
+      <img src="./logo.png" alt="MySpace Logo" />
     </div>
-    <div class="who-we-are container">
-      <div class="row">
-        <div class="column1">
-          <div class="section-title">
-            <h4 class="title">Who we are</h4>
-            <div class="underline"></div>
-          </div>
+    <ul>
+      <li><a class="active" href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a class="book-appointment" href="#">Book Appointment</a></li>
+    </ul>
+  </nav>
+  <section class="hero-slider">
+    <div class="slideshow-container container">
+      <div class="mySlides fade">
+        <div class="text">
+          <h1>Turn your innovative ideas into reality</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
           </p>
         </div>
-        <div class="column2">
-          <img src="./Ellipse 7.png" alt="MySpace Logo" />
+        <img src="./HeroImage.png" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">Caption Two</div>
+        <img src="./HeroImage.png" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="text">Caption Three</div>
+        <img src="./HeroImage.png" />
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+  </section>
+  <div class="swiper-container container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./presentation.png" alt="MySpace Logo" />
+
+          <div class="card-content">
+            <div class="card-title">IOT Integration</div>
+            <div class="card-text">
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+            </div>
+            <button class="read-more-btn">Read more</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./presentation.png" alt="MySpace Logo" />
+
+          <div class="card-content">
+            <div class="card-title">IOT Integration</div>
+            <div class="card-text">
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+            </div>
+            <button class="read-more-btn">Read more</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./presentation.png" alt="MySpace Logo" />
+
+          <div class="card-content">
+            <div class="card-title">IOT Integration</div>
+            <div class="card-text">
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+            </div>
+            <button class="read-more-btn">Read more</button>
+            <div class="card-shadow-1"></div>
+            <div class="card-shadow-2"></div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./presentation.png" alt="MySpace Logo" />
+
+          <div class="card-content">
+            <div class="card-title">IOT Integration</div>
+            <div class="card-text">
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+            </div>
+            <button class="read-more-btn">Read more</button>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="card">
+          <img src="./presentation.png" alt="MySpace Logo" />
+
+          <div class="card-content">
+            <div class="card-title">IOT Integration</div>
+            <div class="card-text">
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+              ERPRP solution at a cost friendly budget for growing businesses wanting to implement
+              technological
+              transformation, automate business process and enhance overall business performance.
+            </div>
+            <button class="read-more-btn">Read more</button>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <div class="who-we-are container">
+    <div class="row">
+      <div class="column1">
+        <div class="section-title">
+          <h4 class="title">Who we are</h4>
+          <div class="underline"></div>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+      <div class="column2">
+        <img src="./Ellipse 7.png" alt="MySpace Logo" />
+      </div>
+    </div>
+  </div>
+  <section class="platforms container">
+    <div class="section-title">
+      <h4 class="title">Platforms</h4>
+      <div class="underline"></div>
+    </div>
+    <div class="section-content">
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="37" height="83" viewBox="0 0 37 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.1667 1.4483H6.83333C3.61167 1.4483 1 5.02969 1 9.44756V73.4416C1 77.8595 3.61167 81.4409 6.83333 81.4409H30.1667C33.3883 81.4409 36 77.8595 36 73.4416V9.44756C36 5.02969 33.3883 1.4483 30.1667 1.4483Z"
+                  stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.354 65.4424H18.6457" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="card-text">Android/Ios</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M57.4471 0.0475159H7.44471C5.55021 0.0475159 3.73331 0.860193 2.39371 2.30677C1.0541 3.75334 0.301514 5.71532 0.301514 7.76109V54.0425C0.301514 56.0883 1.0541 58.0503 2.39371 59.4968C3.73331 60.9434 5.55021 61.7561 7.44471 61.7561H57.4471C61.3758 61.7561 64.5903 58.285 64.5903 54.0425V7.76109C64.5903 5.71532 63.8377 3.75334 62.4981 2.30677C61.1585 0.860193 59.3416 0.0475159 57.4471 0.0475159V0.0475159ZM57.4471 54.0425H7.44471V15.4747H57.4471V54.0425Z"
+                  fill="#5B5B5B" />
+              </svg>
+            </div>
+            <p class="card-text">Web</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M61.0311 0.532593H3.02002C1.78588 0.532593 0.788818 1.58687 0.788818 2.89182V39.4599C0.788818 40.7648 1.78588 41.8191 3.02002 41.8191H29.5155V50.0764H17.5228C16.9092 50.0764 16.4072 50.6072 16.4072 51.256V54.7948C16.4072 55.1192 16.6582 55.3847 16.965 55.3847H47.0862C47.393 55.3847 47.644 55.1192 47.644 54.7948V51.256C47.644 50.6072 47.1419 50.0764 46.5284 50.0764H34.5357V41.8191H61.0311C62.2653 41.8191 63.2623 40.7648 63.2623 39.4599V2.89182C63.2623 1.58687 62.2653 0.532593 61.0311 0.532593ZM58.2422 36.5108H5.80901V5.84086H58.2422V36.5108Z"
+                  fill="#5B5B5B" />
+              </svg>
+            </div>
+            <p class="card-text">Windows/Osx/Linux</p>
+          </div>
         </div>
       </div>
     </div>
-    <section class="platforms container">
+    <div></div>
+  </section>
+  <section class="products container">
+    <div class="section-title">
+      <h4 class="title">Products</h4>
+      <div class="underline"></div>
+    </div>
+    <div class="section-content">
+      <p>Stay tuned for our products! Comming Soon</p>
+    </div>
+  </section>
+
+  <section class="about-us container">
+    <div class="section-title">
+      <h4 class="title">About Us</h4>
+      <div class="underline"></div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <img src="./userimg.png" alt="userimg" />
+        <div class="user-detail">
+          <p>
+            Full Name <br />
+            Position in company <br />
+            Personal quote
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-team">
+      <a>Learn about all of our team -></a>
+      <p>(leads to a page with heirarchy)</p>
+    </div>
+  </section>
+  <section class="contact-us container">
+    <div class="contact-detail">
       <div class="section-title">
-        <h4 class="title">Platforms</h4>
+        <h4 class="title">Contact Us</h4>
         <div class="underline"></div>
       </div>
-      <div class="section-content">
-        <div class="row">
-          <div class="column">
-            <div class="card">
-              <div class="card-img">
-                <svg
-                  width="37"
-                  height="83"
-                  viewBox="0 0 37 83"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M30.1667 1.4483H6.83333C3.61167 1.4483 1 5.02969 1 9.44756V73.4416C1 77.8595 3.61167 81.4409 6.83333 81.4409H30.1667C33.3883 81.4409 36 77.8595 36 73.4416V9.44756C36 5.02969 33.3883 1.4483 30.1667 1.4483Z"
-                    stroke="#5B5B5B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M18.354 65.4424H18.6457"
-                    stroke="#5B5B5B"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-              <p class="card-text">Android/Ios</p>
-            </div>
+      <div class="">
+        <div class="contact-content">
+          <div class="svg-cover">
+            <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5.30729 0.127747C6.0241 -0.0702036 6.79331 -0.0373174 7.48688 0.220931C8.18044 0.47918 8.75651 0.947211 9.1192 1.54711L9.24042 1.77067L10.3249 3.97774C10.654 4.64764 10.7608 5.39137 10.6321 6.11644C10.5033 6.84151 10.1447 7.51592 9.6008 8.05579L9.38293 8.25384L7.67437 9.71371C7.36641 9.98078 7.59738 11.0146 8.7113 12.782C9.71383 14.3724 10.5296 15.1151 10.931 15.1556H11.0014L11.0882 15.1406L14.4464 14.1999C14.8977 14.0731 15.3793 14.0681 15.8337 14.1854C16.288 14.3028 16.6958 14.5375 17.0084 14.8615L17.1574 15.0341L19.3804 17.8548C19.816 18.4077 20.0331 19.08 19.9959 19.761C19.9587 20.4419 19.6694 21.091 19.1756 21.6013L18.9758 21.7903L18.0879 22.5615C17.2906 23.2531 16.2933 23.7204 15.2145 23.9079C14.1357 24.0954 13.0207 23.9953 12.0023 23.6193C8.83253 22.449 5.95271 19.7753 3.33663 15.6252C0.715644 11.4647 -0.373705 7.83823 0.112817 4.73243C0.26004 3.79359 0.682129 2.9088 1.33426 2.17202C1.98638 1.43524 2.8442 0.873981 3.8166 0.547855L4.13276 0.451831L5.30729 0.127747Z"
+                fill="#093159" />
+            </svg>
           </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-img">
-                <svg
-                  width="65"
-                  height="62"
-                  viewBox="0 0 65 62"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M57.4471 0.0475159H7.44471C5.55021 0.0475159 3.73331 0.860193 2.39371 2.30677C1.0541 3.75334 0.301514 5.71532 0.301514 7.76109V54.0425C0.301514 56.0883 1.0541 58.0503 2.39371 59.4968C3.73331 60.9434 5.55021 61.7561 7.44471 61.7561H57.4471C61.3758 61.7561 64.5903 58.285 64.5903 54.0425V7.76109C64.5903 5.71532 63.8377 3.75334 62.4981 2.30677C61.1585 0.860193 59.3416 0.0475159 57.4471 0.0475159V0.0475159ZM57.4471 54.0425H7.44471V15.4747H57.4471V54.0425Z"
-                    fill="#5B5B5B"
-                  />
-                </svg>
-              </div>
-              <p class="card-text">Web</p>
-            </div>
+          <a href="tel:+ 011 415102">+ 011 415102</a>
+        </div>
+        <div class="contact-content">
+          <div class="svg-cover">
+            <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M27.8397 5.33334C27.7224 5.32085 27.6041 5.32085 27.4867 5.33334H3.37558C3.22105 5.3358 3.06754 5.35971 2.91919 5.40445L15.3622 18.1956L27.8397 5.33334Z"
+                fill="#093159" />
+              <path
+                d="M29.1141 6.56885L16.5763 19.4577C16.2536 19.7889 15.8171 19.9747 15.3621 19.9747C14.9072 19.9747 14.4707 19.7889 14.148 19.4577L1.72214 6.66663C1.68394 6.81155 1.66369 6.96089 1.66187 7.11107V24.8888C1.66187 25.3603 1.84331 25.8125 2.16629 26.1459C2.48927 26.4793 2.92733 26.6666 3.38409 26.6666H27.4952C27.952 26.6666 28.39 26.4793 28.713 26.1459C29.036 25.8125 29.2174 25.3603 29.2174 24.8888V7.11107C29.2106 6.92587 29.1757 6.74292 29.1141 6.56885ZM4.56381 24.8888H3.36687V23.6177L9.62714 17.2088L10.8413 18.4622L4.56381 24.8888ZM27.478 24.8888H26.2724L19.9949 18.4622L21.2091 17.2088L27.4694 23.6177L27.478 24.8888Z"
+                fill="#093159" />
+            </svg>
           </div>
-          <div class="column">
-            <div class="card">
-              <div class="card-img">
-                <svg
-                  width="64"
-                  height="56"
-                  viewBox="0 0 64 56"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M61.0311 0.532593H3.02002C1.78588 0.532593 0.788818 1.58687 0.788818 2.89182V39.4599C0.788818 40.7648 1.78588 41.8191 3.02002 41.8191H29.5155V50.0764H17.5228C16.9092 50.0764 16.4072 50.6072 16.4072 51.256V54.7948C16.4072 55.1192 16.6582 55.3847 16.965 55.3847H47.0862C47.393 55.3847 47.644 55.1192 47.644 54.7948V51.256C47.644 50.6072 47.1419 50.0764 46.5284 50.0764H34.5357V41.8191H61.0311C62.2653 41.8191 63.2623 40.7648 63.2623 39.4599V2.89182C63.2623 1.58687 62.2653 0.532593 61.0311 0.532593ZM58.2422 36.5108H5.80901V5.84086H58.2422V36.5108Z"
-                    fill="#5B5B5B"
-                  />
-                </svg>
-              </div>
-              <p class="card-text">Windows/Osx/Linux</p>
-            </div>
+          <a href="mailto:+ 011 415102">enquiry@myspaceinnovation.com</a>
+        </div>
+        <div class="contact-content">
+          <div class="svg-cover">
+            <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="17" cy="29.5692" rx="17" ry="3.69611" fill="#D9D9D9" />
+              <path
+                d="M28.3337 11.1171C28.3337 16.1777 21.4274 25.1872 18.3993 28.9044C17.6732 29.7903 16.3274 29.7903 15.6014 28.9044C12.5201 25.1872 5.66699 16.1777 5.66699 11.1171C5.66699 4.97721 10.741 0 17.0003 0C23.2573 0 28.3337 4.97721 28.3337 11.1171Z"
+                fill="#093159" />
+            </svg>
           </div>
+
+          <a>28 kilo Chowk, Dhulikhel, Nepal 45210 </a>
         </div>
       </div>
-      <div></div>
-    </section>
-    <section class="products container">
-      <div class="section-title">
-        <h4 class="title">Products</h4>
-        <div class="underline"></div>
+    </div>
+    <div class="contact-form">
+      <p class="form-title">Send us a quick message for any enquiries</p>
+      <form action="#" method="post">
+        <input type="text" id="fname" name="firstname" placeholder="Your first name.." required />
+
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
+
+        <input type="email" id="email" name="email" placeholder="Your email.." required />
+
+        <input type="tel" id="contact" name="contact" placeholder="Your contact number.." required />
+
+        <input type="text" id="address" name="address" placeholder="Your address.." required class="address" />
+
+        <textarea id="message" name="message" placeholder="Write something.." required></textarea>
+
+        <div class="submit-btn">
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <section class="footer container">
+    <iframe src="https://maps.google.com/maps?q=dhulikhel&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+      frameborder="0" scrolling="no"></iframe>
+
+    <div class="footer-first">
+      <div class="opening-hours">
+        <p class="title">Opening Hours</p>
+        <ul>
+          <li>
+            <p class="day">Monday</p>
+            <p class="hours">09:00 - 05:00</p>
+          </li>
+          <li>
+            <p class="day">Tuesday</p>
+            <p class="hours">09:00 - 05:00</p>
+          </li>
+          <li>
+            <p class="day">Wednesday</p>
+            <p class="hours">09:00 - 05:00</p>
+          </li>
+          <li>
+            <p class="day">Thursday</p>
+            <p class="hours">09:00 - 05:00</p>
+          </li>
+          <li>
+            <p class="day">Friday</p>
+            <p class="hours">09:00 - 05:00</p>
+          </li>
+          <li>
+            <p class="day">Saturday</p>
+            <p class="hours">Closed</p>
+          </li>
+          <li>
+            <p class="day">Sunday</p>
+            <p class="hours">Closed</p>
+          </li>
+        </ul>
       </div>
-      <div class="section-content">
-        <p>Stay tuned for our products! Comming Soon</p>
+    </div>
+    <div class="company-logo">
+      <img src="./footerimg.png" alt="MySpace Logo" />
+    </div>
+    <div class="footer-last">
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>Our Services</li>
+          <li>Products</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Book Appointment</li>
+          <li>
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.03414 0C3.58358 0 0 3.58358 0 8.03414V35.9659C0 40.4165 3.58358 44 8.03414 44H23.1729V26.7988H18.6244V20.6058H23.1729V15.3148C23.1729 11.1579 25.8604 7.34114 32.0513 7.34114C34.5579 7.34114 36.4114 7.58177 36.4114 7.58177L36.2656 13.365C36.2656 13.365 34.3753 13.3472 32.3125 13.3472C30.08 13.3472 29.722 14.3758 29.722 16.0835V20.6058H36.443L36.1501 26.7988H29.722V44.0001H35.9659C40.4164 44.0001 44 40.4165 44 35.966V8.03418C44 3.58362 40.4164 4.4e-05 35.9659 4.4e-05H8.03409L8.03414 0Z"
+                fill="white" />
+            </svg>
+
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.62689 0.0109863C3.88734 0.0109863 0.00830078 3.88994 0.00830078 8.62957V35.3746C0.00830078 40.1141 3.88725 43.9918 8.62689 43.9918H35.3719C40.1115 43.9918 43.9891 40.1142 43.9891 35.3746V8.62957C43.9891 3.89003 40.1115 0.0109863 35.3719 0.0109863H8.62689ZM10.7946 7.2687C13.0671 7.2687 14.4669 8.76056 14.5101 10.7216C14.5101 12.6393 13.067 14.1731 10.7506 14.1731H10.708C8.47874 14.1731 7.03787 12.6394 7.03787 10.7216C7.03787 8.76061 8.52234 7.2687 10.7945 7.2687H10.7946ZM30.3781 16.4343C34.7486 16.4343 38.0249 19.2909 38.0249 25.4295V36.8893H31.3829V26.1979C31.3829 23.5112 30.4217 21.6783 28.018 21.6783C26.183 21.6783 25.0893 22.9137 24.6091 24.1071C24.4336 24.5341 24.3905 25.1305 24.3905 25.7278V36.8893H17.7486C17.7486 36.8893 17.8357 18.7783 17.7486 16.903H24.3919V19.7333C25.2745 18.3715 26.8533 16.4343 30.3781 16.4343V16.4343ZM7.42965 16.9045H14.0716V36.8894H7.42965V16.9045Z"
+                fill="white" />
+            </svg>
+          </li>
+        </ul>
       </div>
-    </section>
+    </div>
+    <div class="copyright">&copy; 2022 Copyrights Reserved</div>
+  </section>
 
-    <section class="about-us container">
-      <div class="section-title">
-        <h4 class="title">About Us</h4>
-        <div class="underline"></div>
-      </div>
-      <div class="row">
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-        <div class="column">
-          <img src="./userimg.png" alt="userimg" />
-          <div class="user-detail">
-            <p>
-              Full Name <br />
-              Position in company <br />
-              Personal quote
-            </p>
-          </div>
-        </div>
-      </div>
+  <script src="script.js"></script>
+  <script>
+    const slider = document.querySelector(".slider");
+    const cards = document.querySelectorAll(".card");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth + 60;
+    function updateSlider() {
+      const newPosition = -currentIndex * cardWidth;
+      slider.style.transform = `translateX(${newPosition}px)`;
 
-      <div class="about-team">
-        <a>Learn about all of our team -></a>
-        <p>(leads to a page with heirarchy)</p>
-      </div>
-    </section>
-    <section class="contact-us container">
-      <div class="contact-detail">
-        <div class="section-title">
-          <h4 class="title">Contact Us</h4>
-          <div class="underline"></div>
-        </div>
-        <div class="">
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="20"
-                height="24"
-                viewBox="0 0 20 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.30729 0.127747C6.0241 -0.0702036 6.79331 -0.0373174 7.48688 0.220931C8.18044 0.47918 8.75651 0.947211 9.1192 1.54711L9.24042 1.77067L10.3249 3.97774C10.654 4.64764 10.7608 5.39137 10.6321 6.11644C10.5033 6.84151 10.1447 7.51592 9.6008 8.05579L9.38293 8.25384L7.67437 9.71371C7.36641 9.98078 7.59738 11.0146 8.7113 12.782C9.71383 14.3724 10.5296 15.1151 10.931 15.1556H11.0014L11.0882 15.1406L14.4464 14.1999C14.8977 14.0731 15.3793 14.0681 15.8337 14.1854C16.288 14.3028 16.6958 14.5375 17.0084 14.8615L17.1574 15.0341L19.3804 17.8548C19.816 18.4077 20.0331 19.08 19.9959 19.761C19.9587 20.4419 19.6694 21.091 19.1756 21.6013L18.9758 21.7903L18.0879 22.5615C17.2906 23.2531 16.2933 23.7204 15.2145 23.9079C14.1357 24.0954 13.0207 23.9953 12.0023 23.6193C8.83253 22.449 5.95271 19.7753 3.33663 15.6252C0.715644 11.4647 -0.373705 7.83823 0.112817 4.73243C0.26004 3.79359 0.682129 2.9088 1.33426 2.17202C1.98638 1.43524 2.8442 0.873981 3.8166 0.547855L4.13276 0.451831L5.30729 0.127747Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
-            <a href="tel:+ 011 415102">+ 011 415102</a>
-          </div>
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="31"
-                height="32"
-                viewBox="0 0 31 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.8397 5.33334C27.7224 5.32085 27.6041 5.32085 27.4867 5.33334H3.37558C3.22105 5.3358 3.06754 5.35971 2.91919 5.40445L15.3622 18.1956L27.8397 5.33334Z"
-                  fill="#093159"
-                />
-                <path
-                  d="M29.1141 6.56885L16.5763 19.4577C16.2536 19.7889 15.8171 19.9747 15.3621 19.9747C14.9072 19.9747 14.4707 19.7889 14.148 19.4577L1.72214 6.66663C1.68394 6.81155 1.66369 6.96089 1.66187 7.11107V24.8888C1.66187 25.3603 1.84331 25.8125 2.16629 26.1459C2.48927 26.4793 2.92733 26.6666 3.38409 26.6666H27.4952C27.952 26.6666 28.39 26.4793 28.713 26.1459C29.036 25.8125 29.2174 25.3603 29.2174 24.8888V7.11107C29.2106 6.92587 29.1757 6.74292 29.1141 6.56885ZM4.56381 24.8888H3.36687V23.6177L9.62714 17.2088L10.8413 18.4622L4.56381 24.8888ZM27.478 24.8888H26.2724L19.9949 18.4622L21.2091 17.2088L27.4694 23.6177L27.478 24.8888Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
-            <a href="mailto:+ 011 415102">enquiry@myspaceinnovation.com</a>
-          </div>
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="34"
-                height="34"
-                viewBox="0 0 34 34"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <ellipse
-                  cx="17"
-                  cy="29.5692"
-                  rx="17"
-                  ry="3.69611"
-                  fill="#D9D9D9"
-                />
-                <path
-                  d="M28.3337 11.1171C28.3337 16.1777 21.4274 25.1872 18.3993 28.9044C17.6732 29.7903 16.3274 29.7903 15.6014 28.9044C12.5201 25.1872 5.66699 16.1777 5.66699 11.1171C5.66699 4.97721 10.741 0 17.0003 0C23.2573 0 28.3337 4.97721 28.3337 11.1171Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
+      cards.forEach((card) => card.classList.remove("blue"));
+    }
 
-            <a>28 kilo Chowk, Dhulikhel, Nepal 45210 </a>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <p class="form-title">Send us a quick message for any enquiries</p>
-        <form action="#" method="post">
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your first name.."
-            required
-          />
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex > cards.length - 4) {
 
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-            required
-          />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email.."
-            required
-          />
-
-          <input
-            type="tel"
-            id="contact"
-            name="contact"
-            placeholder="Your contact number.."
-            required
-          />
-
-          <input
-            type="text"
-            id="address"
-            name="address"
-            placeholder="Your address.."
-            required
-            class="address"
-          />
-
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something.."
-            required
-          ></textarea>
-
-          <div class="submit-btn">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="footer container">
-      <iframe
-        src="https://maps.google.com/maps?q=dhulikhel&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
-
-      <div class="footer-first">
-        <div class="opening-hours">
-          <p class="title">Opening Hours</p>
-          <ul>
-            <li>
-              <p class="day">Monday</p>
-              <p class="hours">09:00 - 05:00</p>
-            </li>
-            <li>
-              <p class="day">Tuesday</p>
-              <p class="hours">09:00 - 05:00</p>
-            </li>
-            <li>
-              <p class="day">Wednesday</p>
-              <p class="hours">09:00 - 05:00</p>
-            </li>
-            <li>
-              <p class="day">Thursday</p>
-              <p class="hours">09:00 - 05:00</p>
-            </li>
-            <li>
-              <p class="day">Friday</p>
-              <p class="hours">09:00 - 05:00</p>
-            </li>
-            <li>
-              <p class="day">Saturday</p>
-              <p class="hours">Closed</p>
-            </li>
-            <li>
-              <p class="day">Sunday</p>
-              <p class="hours">Closed</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="company-logo">
-        <img src="./footerimg.png" alt="MySpace Logo" />
-      </div>
-      <div class="footer-last">
-        <div class="links">
-          <ul>
-            <li>Home</li>
-            <li>Our Services</li>
-            <li>Products</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>Book Appointment</li>
-            <li>
-              <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.03414 0C3.58358 0 0 3.58358 0 8.03414V35.9659C0 40.4165 3.58358 44 8.03414 44H23.1729V26.7988H18.6244V20.6058H23.1729V15.3148C23.1729 11.1579 25.8604 7.34114 32.0513 7.34114C34.5579 7.34114 36.4114 7.58177 36.4114 7.58177L36.2656 13.365C36.2656 13.365 34.3753 13.3472 32.3125 13.3472C30.08 13.3472 29.722 14.3758 29.722 16.0835V20.6058H36.443L36.1501 26.7988H29.722V44.0001H35.9659C40.4164 44.0001 44 40.4165 44 35.966V8.03418C44 3.58362 40.4164 4.4e-05 35.9659 4.4e-05H8.03409L8.03414 0Z"
-                  fill="white"
-                />
-              </svg>
-
-              <svg
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8.62689 0.0109863C3.88734 0.0109863 0.00830078 3.88994 0.00830078 8.62957V35.3746C0.00830078 40.1141 3.88725 43.9918 8.62689 43.9918H35.3719C40.1115 43.9918 43.9891 40.1142 43.9891 35.3746V8.62957C43.9891 3.89003 40.1115 0.0109863 35.3719 0.0109863H8.62689ZM10.7946 7.2687C13.0671 7.2687 14.4669 8.76056 14.5101 10.7216C14.5101 12.6393 13.067 14.1731 10.7506 14.1731H10.708C8.47874 14.1731 7.03787 12.6394 7.03787 10.7216C7.03787 8.76061 8.52234 7.2687 10.7945 7.2687H10.7946ZM30.3781 16.4343C34.7486 16.4343 38.0249 19.2909 38.0249 25.4295V36.8893H31.3829V26.1979C31.3829 23.5112 30.4217 21.6783 28.018 21.6783C26.183 21.6783 25.0893 22.9137 24.6091 24.1071C24.4336 24.5341 24.3905 25.1305 24.3905 25.7278V36.8893H17.7486C17.7486 36.8893 17.8357 18.7783 17.7486 16.903H24.3919V19.7333C25.2745 18.3715 26.8533 16.4343 30.3781 16.4343V16.4343ZM7.42965 16.9045H14.0716V36.8894H7.42965V16.9045Z"
-                  fill="white"
-                />
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">&copy; 2022 Copyrights Reserved</div>
-    </section>
-
-    <script src="script.js"></script>
-    <script>
-      const slider = document.querySelector(".slider");
-      const cards = document.querySelectorAll(".card");
-      const prevButton = document.querySelector(".prev");
-      const nextButton = document.querySelector(".next");
-      let currentIndex = 0;
-      const cardWidth = cards[0].offsetWidth + 60; // Including margin
-      function updateSlider() {
-        const newPosition = -currentIndex * cardWidth;
-        slider.style.transform = `translateX(${newPosition}px)`;
-
-        cards.forEach((card) => card.classList.remove("blue"));
+        currentIndex = 0;
       }
-
-      function nextSlide() {
-        currentIndex++;
-        if (currentIndex > cards.length - 4) {
-          // Adjust to display 4 cards
-          currentIndex = 0;
-        }
-        updateSlider();
-        toggleActiveButton(nextButton, prevButton);
-      }
-
-      function prevSlide() {
-        currentIndex--;
-        if (currentIndex < 0) {
-          currentIndex = cards.length - 4; // Adjust to display 4 cards
-        }
-        updateSlider();
-        toggleActiveButton(prevButton, nextButton);
-      }
-
-      function toggleActiveButton(activeButton, inactiveButton) {
-        activeButton.classList.add("active");
-        inactiveButton.classList.remove("active");
-      }
-
-      // Initial slider update
       updateSlider();
-    </script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        spaceBetween: 30,
+      toggleActiveButton(nextButton, prevButton);
+    }
 
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = cards.length - 4;
+      }
+      updateSlider();
+      toggleActiveButton(prevButton, nextButton);
+    }
+
+    function toggleActiveButton(activeButton, inactiveButton) {
+      activeButton.classList.add("active");
+      inactiveButton.classList.remove("active");
+    }
+
+
+    updateSlider();
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        540: {
+          slidesPerView: 1,
         },
-        breakpoints: {
-          540: {
-            slidesPerView: 1,
-          },
 
-          768: {
-            slidesPerView: 2,
-          },
-
-          1024: {
-            slidesPerView: 3,
-          },
-          1250: {
-            slidesPerView: 4,
-          },
+        768: {
+          slidesPerView: 2,
         },
+
+        1024: {
+          slidesPerView: 3,
+        },
+        1250: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
+  <script>
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+    var swipperCards = document.querySelectorAll('.card');
+
+    readMoreBtns.forEach(function (btn, index) {
+      btn.addEventListener('click', function () {
+        var card = swipperCards[index];
+
+        var cardText = card.querySelector('.card-text');
+
+        if (card.classList.contains('expanded')) {
+          card.classList.remove('expanded');
+
+          btn.textContent = 'Read more';
+        } else {
+
+          card.classList.add('expanded');
+
+          btn.textContent = 'Read less';
+
+        }
       });
-    </script>
-  </body>
+    });
+
+    // Logic to show/hide "Read more" button based on text length
+    swipperCards.forEach(function (card, index) {
+      var cardText = card.querySelector('.card-text');
+      var readMoreBtn = readMoreBtns[index];
+
+      if (cardText.textContent.length > 300) {
+        readMoreBtn.style.display = 'block';
+      } else {
+        readMoreBtn.style.display = 'none';
+      }
+    });
+
+
+
+
+  </script>
+</body>
+
 </html>

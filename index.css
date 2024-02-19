@@ -822,5 +822,5 @@ a.book-appointment {
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
-  content: none;* Change to the desired color */
+  content: none;
 }

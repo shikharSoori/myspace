@@ -867,7 +867,7 @@ a.book-appointment {
         color: #5e0296;
         margin-top: 10px;
       }
-      .card-shadow-1 {
+      /* .card-shadow-1 {
         background: blue;
         width: 180px;
         font-weight: 700;
@@ -877,7 +877,7 @@ a.book-appointment {
         left: 10px;
         opacity: 0.5;
         transform: translateZ(-50px);
-      }
+      } */
     }
     /* .card-content:before {
       content: "";

@@ -19,29 +19,64 @@
 </head>
 
 <body>
-  <nav>
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <?xml version="1.0" encoding="utf-8"?>
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-        <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-        <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-      </svg>
-    </label>
-    <div class="logo">
-      <img src="./Logo.png" alt="MySpace Logo" />
+  <div class="nav container">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        <div class="logo">
+          <img src="./Logo.png" alt="MySpace Logo" />
+        </div>
+      </div>
     </div>
-    <ul>
-      <li><a class="active" href="#">About Us <span></span></a></li>
-      <li><a href="#">Services</a> <span></span></li>
-      <li><a href="#">Products</a> <span></span></li>
-      <li><a href="#">Career</a> <span></span></li>
-      <li><a href="#">Contact</a> <span></span></li>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
 
-    </ul>
-    <button class="book-appointment" href="#">Book<br /> Appointment</button>
-  </nav>
+    <div class="nav-links">
+      <hr />
+      <a href="//github.io/jo_geek" target="_blank">
+        <div>About Us</div> <span></span>
+      </a>
+      <a href="http://stackoverflow.com/users/4084003/" target="_blank">
+        <div>Services</div> <span></span>
+      </a>
+      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">
+        <div>Products</div> <span></span>
+      </a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank">
+        <div>Careers</div> <span></span>
+      </a>
+      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">
+        <div>Contact</div> <span></span>
+      </a>
+      <hr />
+      <div class="appointment-btn-sm">
+        <button class="appointment-btn-sm">Book Appointment</button>
+      </div>
+      <div class="connect-with-us">
+        <h4>Connect with us </h4>
+        <div class="social-links">
+          <img src="./sociallinkedin.png" alt="MySpace Logo" />
+          <img src="./socialskype.png" alt="MySpace Logo" />
+          <img src="./socialwhatsapp.png" alt="MySpace Logo" />
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="appointment-btn">
+      <button>Book Appointment</button>
+    </div>
+
+  </div>
+
   <div class="hero container">
     <h1>Turn your innovative <br /> ideas into <span>reality</span></h1>
     <button>Book Appointment</button>
@@ -62,7 +97,8 @@
           businesses.<br /><br />Established in 2022, in Nepal, MySpace Innovation is a startup software solution
           company that provides new and Innovative solutions for modern problems using latest and greatest technology.
           We empower business with transformative solutions that drive success.<br /><br /> We are proud team of
-          international software industry experts bringing you a walth of experience, expertise and a shared passion for
+          international software industry experts bringing you a walth of experience, expertise and a shared passion
+          for
           driving positive change through tailored solutions.</p>
 
         <div class="view-more-btn">
@@ -198,7 +234,8 @@
           <p>From the initial consultation to the final delivery, we are dedicated to exceeding expectations and
             delivering results faster.<br /><br />Wheather you're a startup looking to start your software business or
             an established enterprise seeking innovation, automation, or resource planning and management tool we are
-            here for you.<br /><br />Work with us and experience the difference - where simplicity, vision, technology,
+            here for you.<br /><br />Work with us and experience the difference - where simplicity, vision,
+            technology,
             and excellence converge.</p>
 
         </div>

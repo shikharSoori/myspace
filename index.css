@@ -1080,6 +1080,7 @@ nav {
     }
     #careersList {
       .careersItem {
+        gap: 8px;
         h1 {
           font-size: 16px;
         }
@@ -1131,6 +1132,10 @@ nav {
         }
         .form-input input:focus + label,
         .form-input input:not(:placeholder-shown) + label {
+          top: -4px !important;
+          font-size: 10px !important;
+          color: #e4e4e4;
+          padding: 5px !important;
         }
         .form-input textarea:focus + label,
         .form-input textarea:not(:placeholder-shown) + label {

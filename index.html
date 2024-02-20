@@ -13,7 +13,7 @@
   <title>Document</title>
   <style>
     .hidden {
-      display: none;
+      display: none !important;
     }
   </style>
 </head>
@@ -30,121 +30,373 @@
       </svg>
     </label>
     <div class="logo">
-      <img src="./logo.png" alt="MySpace Logo" />
+      <img src="./Logo.png" alt="MySpace Logo" />
     </div>
     <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a class="book-appointment" href="#">Book Appointment</a></li>
+      <li><a class="active" href="#">About Us <span></span></a></li>
+      <li><a href="#">Services</a> <span></span></li>
+      <li><a href="#">Products</a> <span></span></li>
+      <li><a href="#">Career</a> <span></span></li>
+      <li><a href="#">Contact</a> <span></span></li>
+
     </ul>
+    <button class="book-appointment" href="#">Book<br /> Appointment</button>
   </nav>
+  <div class="hero container">
+    <h1>Turn your innovative <br /> ideas into <span>reality</span></h1>
+    <button>Book Appointment</button>
+  </div>
+  <section class="about-us container">
+    <div class="who-we-are">
 
-  <!-- <div class="swiper-container container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="./presentation.png" alt="MySpace Logo" />
+      <img src="./aboutus.png" alt="MySpace Logo" />
+      <div class="content">
+        <div class="header">
+          <h1>About Us</h1>
+          <span></span>
+        </div>
 
-          <div class="card-content">
-            <div class="card-title">IOT Integration</div>
-            <div class="card-text">
-              ERPRP solution at a cost friendly budget for growing businesses
-              wanting to implement technological transformation, automate
-              business process and enhance overall business performance.
-            </div>
-            <button class="read-more-btn">Read more</button>
-          </div>
+        <h4>Whow we are?</h4>
+        <p>A trusted partner in your journey to navigate through the complexities of the digital age, with a focus on
+          innovation and client satisfaction, we help to transform and future-proof your
+          businesses.<br /><br />Established in 2022, in Nepal, MySpace Innovation is a startup software solution
+          company that provides new and Innovative solutions for modern problems using latest and greatest technology.
+          We empower business with transformative solutions that drive success.<br /><br /> We are proud team of
+          international software industry experts bringing you a walth of experience, expertise and a shared passion for
+          driving positive change through tailored solutions.</p>
+
+        <div class="view-more-btn">
+          <button id="toggleTeamBtn">View More</button>
         </div>
       </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="./presentation.png" alt="MySpace Logo" />
 
-          <div class="card-content">
-            <div class="card-title">IOT Integration</div>
-            <div class="card-text">
-              ERPRP solution at a cost friendly budget for growing businesses
-              wanting to implement technological transformation, automate
-              business process and enhance overall business performance.
-            </div>
-            <button class="read-more-btn">Read more</button>
-          </div>
+    </div>
+    <div id="about-us-lessview">
+      <div class="our-mission">
+
+        <div class="content">
+
+          <h4>Our Mission?</h4>
+          <p>Transform Your Business with modern ERP Solutions and end to end process automation
+            Solutions.<br /><br />We
+            strive to help our clients focus on their businesses while we conentrate on revolutionizing their business
+            process by providing remarkable, secure, ease-to-use, high performing, and highly scalable products using
+            today's best of the best industry tools and practices.<br /><br />We are committed to delivering
+            unparalleled
+            value through cutting-edge technology, unwavering integrity, and relentless pursuit of excellence.</p>
+
         </div>
+        <img src="./aboutus.png" alt="MySpace Logo" />
+
       </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="./presentation.png" alt="MySpace Logo" />
+      <div class="our-team">
 
-          <div class="card-content">
-            <div class="card-title">IOT Integration</div>
-            <div class="card-text">
-              ERPRP solution at a cost friendly budget for growing businesses
-              wanting to implement technological ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance. ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance.
+        <div class="header">
+          <h1>Our Team</h1>
+          <span></span>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
             </div>
-            <button class="read-more-btn">Read more</button>
-            <div class="card-shadow-1"></div>
-            <div class="card-shadow-2"></div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
+          </div>
+          <div class="column">
+            <img src="./userimg.png" alt="userimg" />
+            <div class="user-detail">
+              <p>
+                Full Name <br />
+                Position in company <br />
+                Personal quote
+              </p>
+            </div>
           </div>
         </div>
+
+
       </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="./presentation.png" alt="MySpace Logo" />
+      <div class="our-success">
 
-          <div class="card-content">
-            <div class="card-title">IOT Integration</div>
-            <div class="card-text">
-              ERPRP solution at a cost friendly budget for growing businesses
-              wanting to implement technological ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance. ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance.
-            </div>
-            <button class="read-more-btn">Read more</button>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="card">
-          <img src="./presentation.png" alt="MySpace Logo" />
+        <div class="content">
 
-          <div class="card-content">
-            <div class="card-title">IOT Integration</div>
-            <div class="card-text">
-              ERPRP solution at a cost friendly budget for growing businesses
-              wanting to implement technological ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance. ERPRP solution at a cost
-              friendly budget for growing businesses wanting to implement
-              technological transformation, automate business process and
-              enhance overall business performance.
-            </div>
-            <button class="read-more-btn">Read more</button>
-          </div>
+          <h4>Our Success is our Priority</h4>
+          <p>From the initial consultation to the final delivery, we are dedicated to exceeding expectations and
+            delivering results faster.<br /><br />Wheather you're a startup looking to start your software business or
+            an established enterprise seeking innovation, automation, or resource planning and management tool we are
+            here for you.<br /><br />Work with us and experience the difference - where simplicity, vision, technology,
+            and excellence converge.</p>
+
         </div>
+        <div class="view-more-btn">
+          <button id="toggleLessTeamBtn">View Less</button>
+        </div>
+
       </div>
     </div>
 
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div> -->
-  <section class="why-us container">
-    <h1>Products</h1>
+  </section>
+  <section class="why-choose-us container">
+    <div class="header">
+      <h1>Why Choose Us?</h1>
+      <span></span>
+    </div>
+    <div class="row reason-list">
+      <div class="column">
+        <div class="card">
 
-    <div class="row">
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <div style="background-color: #F9F9F9;">
+    <div class="swiper-container container margin">
+      <div class="header">
+        <h1>Our Services</h1>
+        <span></span>
+      </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./presentation.png" alt="MySpace Logo" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                We create <strong>customized software solution</strong> that is efficient and more adjustable to your
+                needs, designed to
+                address your business’s unique, problem and challenges, support your core business functions and offer
+                you
+                a significant competitive advantage by increasing productivity.
+                <br />
+                <br />
+                We build solutions like custom<strong> ERP, Business Process Automation and Operation Management
+                  Software.</strong>
+
+
+              </div>
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./presentation.png" alt="MySpace Logo" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                We create <strong>customized software solution</strong> that is efficient and more adjustable to your
+                needs, designed to
+                address your business’s unique, problem and challenges, support your core business functions and offer
+                you
+                a significant competitive advantage by increasing productivity.
+                <br />
+                <br />
+                We build solutions like custom<strong> ERP, Business Process Automation and Operation Management
+                  Software.</strong>
+
+
+              </div>
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./presentation.png" alt="MySpace Logo" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                We create <strong>customized software solution</strong> that is efficient and more adjustable to your
+                needs, designed to
+                address your business’s unique, problem and challenges, support your core business functions and offer
+                you
+                a significant competitive advantage by increasing productivity.
+                <br />
+                <br />
+                We build solutions like custom<strong> ERP, Business Process Automation and Operation Management
+                  Software.</strong>
+
+
+              </div>
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./presentation.png" alt="MySpace Logo" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                We create customized software solution that is efficient and more adjustable to your
+                needs, designed to
+                address your business’s unique, problem and challenges, support your core business functions and offer
+                you
+                a significant competitive advantage by increasing productivity.
+
+                We build solutions like custom ERP, Business Process Automation and Operation Management
+                Software.
+                you
+                a significant competitive advantage by increasing productivity.
+
+                We build solutions like custom ERP, Business Process Automation and Operation Management
+                Software.
+
+
+              </div>
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <img src="./presentation.png" alt="MySpace Logo" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                We create <strong>customized software solution</strong> that is efficient and more adjustable to your
+                needs, designed to
+                address your business’s unique, problem and challenges, support your core business functions and offer
+                you
+                a significant competitive advantage by increasing productivity.
+                <br />
+                <br />
+                We build solutions like custom<strong> ERP, Business Process Automation and Operation Management
+                  Software.</strong>
+
+
+              </div>
+              <button class="read-more-btn">Read more</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <section class="platforms container">
+    <div class="header">
+      <h1>Platforms we work on?</h1>
+      <span></span>
+    </div>
+    <div class="row platforms-list">
       <div class="column">
         <div class="card">
           <div class="card-img">
@@ -186,71 +438,91 @@
     </div>
   </section>
   <section class="products container">
-    <h1>Products</h1>
-    <p>
-      Currently, all of our product are in development phase. Stay tuned to
-      check out our progress. Once the product is released. It will be
-      availbale in this section.
-    </p>
-    <div class="w3-border">
-      <div class="w3-grey" style="height: 24px; width: 60%"></div>
-      <div>
+    <div class="header">
+      <h1>Products</h1>
+      <span></span>
+    </div>
+    <div class="development-phase">
+      <p>
+        Currently, all of our product are in development phase. Stay tuned to
+        check out our progress. Once the product is released. It will be
+        availbale in this section.
+      </p>
+      <div class="current-progress">Current Progress: <span>** All Product **</span></div>
+      <div class="progress-wrapper">
+        <div class="progress-bar" style=" width: 60%"></div>
+
+      </div>
+      <div class="start-release">
         <p>Start Day</p>
         <p>Release Day</p>
       </div>
     </div>
-    <p>List of our products.</p>
-    <div class="row">
-      <div class="column">
-        <div class="card">
-          <div class="card-img">
-            <svg width="37" height="83" viewBox="0 0 37 83" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M30.1667 1.4483H6.83333C3.61167 1.4483 1 5.02969 1 9.44756V73.4416C1 77.8595 3.61167 81.4409 6.83333 81.4409H30.1667C33.3883 81.4409 36 77.8595 36 73.4416V9.44756C36 5.02969 33.3883 1.4483 30.1667 1.4483Z"
-                stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-              <path d="M18.354 65.4424H18.6457" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
-            </svg>
-          </div>
-          <p class="card-text">Android/Ios</p>
-        </div>
+    <div class="product-wrapper">
+      <div class="list-product">
+        <p>List of our products.</p>
+        <p><a href="#">View More</a></p>
       </div>
-      <div class="column">
-        <div class="card">
-          <div class="card-img">
-            <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M57.4471 0.0475159H7.44471C5.55021 0.0475159 3.73331 0.860193 2.39371 2.30677C1.0541 3.75334 0.301514 5.71532 0.301514 7.76109V54.0425C0.301514 56.0883 1.0541 58.0503 2.39371 59.4968C3.73331 60.9434 5.55021 61.7561 7.44471 61.7561H57.4471C61.3758 61.7561 64.5903 58.285 64.5903 54.0425V7.76109C64.5903 5.71532 63.8377 3.75334 62.4981 2.30677C61.1585 0.860193 59.3416 0.0475159 57.4471 0.0475159V0.0475159ZM57.4471 54.0425H7.44471V15.4747H57.4471V54.0425Z"
-                fill="#5B5B5B" />
-            </svg>
+      <div class="row product-list">
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="37" height="83" viewBox="0 0 37 83" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M30.1667 1.4483H6.83333C3.61167 1.4483 1 5.02969 1 9.44756V73.4416C1 77.8595 3.61167 81.4409 6.83333 81.4409H30.1667C33.3883 81.4409 36 77.8595 36 73.4416V9.44756C36 5.02969 33.3883 1.4483 30.1667 1.4483Z"
+                  stroke="#5B5B5B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M18.354 65.4424H18.6457" stroke="#5B5B5B" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </div>
+            <p class="card-text">Android/Ios</p>
           </div>
-          <p class="card-text">Web</p>
         </div>
-      </div>
-      <div class="column">
-        <div class="card">
-          <div class="card-img">
-            <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M61.0311 0.532593H3.02002C1.78588 0.532593 0.788818 1.58687 0.788818 2.89182V39.4599C0.788818 40.7648 1.78588 41.8191 3.02002 41.8191H29.5155V50.0764H17.5228C16.9092 50.0764 16.4072 50.6072 16.4072 51.256V54.7948C16.4072 55.1192 16.6582 55.3847 16.965 55.3847H47.0862C47.393 55.3847 47.644 55.1192 47.644 54.7948V51.256C47.644 50.6072 47.1419 50.0764 46.5284 50.0764H34.5357V41.8191H61.0311C62.2653 41.8191 63.2623 40.7648 63.2623 39.4599V2.89182C63.2623 1.58687 62.2653 0.532593 61.0311 0.532593ZM58.2422 36.5108H5.80901V5.84086H58.2422V36.5108Z"
-                fill="#5B5B5B" />
-            </svg>
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="65" height="62" viewBox="0 0 65 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M57.4471 0.0475159H7.44471C5.55021 0.0475159 3.73331 0.860193 2.39371 2.30677C1.0541 3.75334 0.301514 5.71532 0.301514 7.76109V54.0425C0.301514 56.0883 1.0541 58.0503 2.39371 59.4968C3.73331 60.9434 5.55021 61.7561 7.44471 61.7561H57.4471C61.3758 61.7561 64.5903 58.285 64.5903 54.0425V7.76109C64.5903 5.71532 63.8377 3.75334 62.4981 2.30677C61.1585 0.860193 59.3416 0.0475159 57.4471 0.0475159V0.0475159ZM57.4471 54.0425H7.44471V15.4747H57.4471V54.0425Z"
+                  fill="#5B5B5B" />
+              </svg>
+            </div>
+            <p class="card-text">Web</p>
           </div>
-          <p class="card-text">Windows/Osx/Linux</p>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="card-img">
+              <svg width="64" height="56" viewBox="0 0 64 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M61.0311 0.532593H3.02002C1.78588 0.532593 0.788818 1.58687 0.788818 2.89182V39.4599C0.788818 40.7648 1.78588 41.8191 3.02002 41.8191H29.5155V50.0764H17.5228C16.9092 50.0764 16.4072 50.6072 16.4072 51.256V54.7948C16.4072 55.1192 16.6582 55.3847 16.965 55.3847H47.0862C47.393 55.3847 47.644 55.1192 47.644 54.7948V51.256C47.644 50.6072 47.1419 50.0764 46.5284 50.0764H34.5357V41.8191H61.0311C62.2653 41.8191 63.2623 40.7648 63.2623 39.4599V2.89182C63.2623 1.58687 62.2653 0.532593 61.0311 0.532593ZM58.2422 36.5108H5.80901V5.84086H58.2422V36.5108Z"
+                  fill="#5B5B5B" />
+              </svg>
+            </div>
+            <p class="card-text">Windows/Osx/Linux</p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="subscribe-btn">
+      <button>Subscribe</button>
+    </div>
+
+
   </section>
   <section class="careers container">
-    <h1>Careers</h1>
+    <div class="header">
+      <h1>Careers</h1>
+      <span></span>
+    </div>
     <h4>Work with us and shape your future</h4>
     <p>
       We believe in fostering a dynamic and inclusive work environment where
       talent thrives, creativity flows, and every team member contributes to
       our shared success. If you are passionate, driven, and looking to make a
       meaningful impact, we invite you to explore the exciting career
-      opportunities available within our organization. We provide both
-      part-time, full-time and internship roles in various fields. Whether,
+      opportunities available within our organization.<br /><br />
+      We provide both part-time, full-time and internship roles in various fields. Whether,
       your are a full time worker, recent graduate looking for hands-on
       experience or a student looking for opportunity to kick start your
       career, anyone with can do attitude can apply.
@@ -261,9 +533,11 @@
       letter outlining your qualifications and interest in the position
       through jobs section.
     </p>
+    <br />
+    <br />
     <p>
       For any other query regarding job applcation send us a
-      <a>quick message.</a>
+      <a href="#quick-message">quick message.</a>
     </p>
     <div id="toggleBtn">
       <button onclick="toggleJobs()">View Jobs</button>
@@ -276,188 +550,65 @@
         individuals to join us in various roles.
       </p>
       <div id="careersList"></div>
-      <div>
+
+      <div id="toggleBtn">
         <button onclick="closeJobs()">Close Jobs</button>
       </div>
     </div>
   </section>
-
-
-  <!-- <section class="contact-us container">
-      <div class="contact-detail">
-        <div class="section-title">
-          <h4 class="title">Contact Us</h4>
-          <div class="underline"></div>
-        </div>
-        <div class="">
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="20"
-                height="24"
-                viewBox="0 0 20 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M5.30729 0.127747C6.0241 -0.0702036 6.79331 -0.0373174 7.48688 0.220931C8.18044 0.47918 8.75651 0.947211 9.1192 1.54711L9.24042 1.77067L10.3249 3.97774C10.654 4.64764 10.7608 5.39137 10.6321 6.11644C10.5033 6.84151 10.1447 7.51592 9.6008 8.05579L9.38293 8.25384L7.67437 9.71371C7.36641 9.98078 7.59738 11.0146 8.7113 12.782C9.71383 14.3724 10.5296 15.1151 10.931 15.1556H11.0014L11.0882 15.1406L14.4464 14.1999C14.8977 14.0731 15.3793 14.0681 15.8337 14.1854C16.288 14.3028 16.6958 14.5375 17.0084 14.8615L17.1574 15.0341L19.3804 17.8548C19.816 18.4077 20.0331 19.08 19.9959 19.761C19.9587 20.4419 19.6694 21.091 19.1756 21.6013L18.9758 21.7903L18.0879 22.5615C17.2906 23.2531 16.2933 23.7204 15.2145 23.9079C14.1357 24.0954 13.0207 23.9953 12.0023 23.6193C8.83253 22.449 5.95271 19.7753 3.33663 15.6252C0.715644 11.4647 -0.373705 7.83823 0.112817 4.73243C0.26004 3.79359 0.682129 2.9088 1.33426 2.17202C1.98638 1.43524 2.8442 0.873981 3.8166 0.547855L4.13276 0.451831L5.30729 0.127747Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
-            <a href="tel:+ 011 415102">+ 011 415102</a>
-          </div>
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="31"
-                height="32"
-                viewBox="0 0 31 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M27.8397 5.33334C27.7224 5.32085 27.6041 5.32085 27.4867 5.33334H3.37558C3.22105 5.3358 3.06754 5.35971 2.91919 5.40445L15.3622 18.1956L27.8397 5.33334Z"
-                  fill="#093159"
-                />
-                <path
-                  d="M29.1141 6.56885L16.5763 19.4577C16.2536 19.7889 15.8171 19.9747 15.3621 19.9747C14.9072 19.9747 14.4707 19.7889 14.148 19.4577L1.72214 6.66663C1.68394 6.81155 1.66369 6.96089 1.66187 7.11107V24.8888C1.66187 25.3603 1.84331 25.8125 2.16629 26.1459C2.48927 26.4793 2.92733 26.6666 3.38409 26.6666H27.4952C27.952 26.6666 28.39 26.4793 28.713 26.1459C29.036 25.8125 29.2174 25.3603 29.2174 24.8888V7.11107C29.2106 6.92587 29.1757 6.74292 29.1141 6.56885ZM4.56381 24.8888H3.36687V23.6177L9.62714 17.2088L10.8413 18.4622L4.56381 24.8888ZM27.478 24.8888H26.2724L19.9949 18.4622L21.2091 17.2088L27.4694 23.6177L27.478 24.8888Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
-            <a href="mailto:+ 011 415102">enquiry@myspaceinnovation.com</a>
-          </div>
-          <div class="contact-content">
-            <div class="svg-cover">
-              <svg
-                width="34"
-                height="34"
-                viewBox="0 0 34 34"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <ellipse
-                  cx="17"
-                  cy="29.5692"
-                  rx="17"
-                  ry="3.69611"
-                  fill="#D9D9D9"
-                />
-                <path
-                  d="M28.3337 11.1171C28.3337 16.1777 21.4274 25.1872 18.3993 28.9044C17.6732 29.7903 16.3274 29.7903 15.6014 28.9044C12.5201 25.1872 5.66699 16.1777 5.66699 11.1171C5.66699 4.97721 10.741 0 17.0003 0C23.2573 0 28.3337 4.97721 28.3337 11.1171Z"
-                  fill="#093159"
-                />
-              </svg>
-            </div>
-
-            <a>28 kilo Chowk, Dhulikhel, Nepal 45210 </a>
-          </div>
-        </div>
-      </div>
-      <div class="contact-form">
-        <p class="form-title">Send us a quick message for any enquiries</p>
-        <form action="#" method="post">
-          <input
-            type="text"
-            id="fname"
-            name="firstname"
-            placeholder="Your first name.."
-            required
-          />
-
-          <input
-            type="text"
-            id="lname"
-            name="lastname"
-            placeholder="Your last name.."
-            required
-          />
-
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your email.."
-            required
-          />
-
-          <input
-            type="tel"
-            id="contact"
-            name="contact"
-            placeholder="Your contact number.."
-            required
-          />
-
-          <input
-            type="text"
-            id="address"
-            name="address"
-            placeholder="Your address.."
-            required
-            class="address"
-          />
-
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write something.."
-            required
-          ></textarea>
-
-          <div class="submit-btn">
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-      </div>
-    </section> -->
-
   <section class="get-in-touch container">
-    <div class="">
+
+    <div class="get-in-touch-wrapper">
+      <div class="header">
+        <h1>Get In Touch</h1>
+        <span></span>
+      </div>
       <div class="contact-content">
-        <div class="svg-cover">
-          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M5.30729 0.127747C6.0241 -0.0702036 6.79331 -0.0373174 7.48688 0.220931C8.18044 0.47918 8.75651 0.947211 9.1192 1.54711L9.24042 1.77067L10.3249 3.97774C10.654 4.64764 10.7608 5.39137 10.6321 6.11644C10.5033 6.84151 10.1447 7.51592 9.6008 8.05579L9.38293 8.25384L7.67437 9.71371C7.36641 9.98078 7.59738 11.0146 8.7113 12.782C9.71383 14.3724 10.5296 15.1151 10.931 15.1556H11.0014L11.0882 15.1406L14.4464 14.1999C14.8977 14.0731 15.3793 14.0681 15.8337 14.1854C16.288 14.3028 16.6958 14.5375 17.0084 14.8615L17.1574 15.0341L19.3804 17.8548C19.816 18.4077 20.0331 19.08 19.9959 19.761C19.9587 20.4419 19.6694 21.091 19.1756 21.6013L18.9758 21.7903L18.0879 22.5615C17.2906 23.2531 16.2933 23.7204 15.2145 23.9079C14.1357 24.0954 13.0207 23.9953 12.0023 23.6193C8.83253 22.449 5.95271 19.7753 3.33663 15.6252C0.715644 11.4647 -0.373705 7.83823 0.112817 4.73243C0.26004 3.79359 0.682129 2.9088 1.33426 2.17202C1.98638 1.43524 2.8442 0.873981 3.8166 0.547855L4.13276 0.451831L5.30729 0.127747Z"
-              fill="#093159" />
-          </svg>
-        </div>
+        <svg width="20" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.30729 0.128173C6.0241 -0.070438 6.79331 -0.0374419 7.48688 0.221669C8.18044 0.48078 8.75651 0.950373 9.1192 1.55228L9.24042 1.77658L10.3249 3.99102C10.654 4.66315 10.7608 5.40937 10.6321 6.13686C10.5033 6.86436 10.1447 7.54102 9.6008 8.08268L9.38293 8.2814L7.67437 9.74615C7.36641 10.0141 7.59738 11.0513 8.7113 12.8247C9.71383 14.4204 10.5296 15.1656 10.931 15.2062H11.0014L11.0882 15.1912L14.4464 14.2473C14.8977 14.1201 15.3793 14.115 15.8337 14.2328C16.288 14.3505 16.6958 14.586 17.0084 14.9112L17.1574 15.0843L19.3804 17.9144C19.816 18.4692 20.0331 19.1437 19.9959 19.8269C19.9587 20.5102 19.6694 21.1614 19.1756 21.6734L18.9758 21.8631L18.0879 22.6368C17.2906 23.3307 16.2933 23.7996 15.2145 23.9877C14.1357 24.1759 13.0207 24.0754 12.0023 23.6982C8.83253 22.5239 5.95271 19.8413 3.33663 15.6774C0.715644 11.5029 -0.373705 7.8644 0.112817 4.74823C0.26004 3.80626 0.682129 2.91851 1.33426 2.17927C1.98638 1.44003 2.8442 0.876899 3.8166 0.549684L4.13276 0.453339L5.30729 0.128173Z"
+            fill="#3C3C3C" />
+        </svg>
+
         <a href="tel:+ 011 415102">+ 011 415102</a>
       </div>
       <div class="contact-content">
-        <div class="svg-cover">
-          <svg width="31" height="32" viewBox="0 0 31 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M27.8397 5.33334C27.7224 5.32085 27.6041 5.32085 27.4867 5.33334H3.37558C3.22105 5.3358 3.06754 5.35971 2.91919 5.40445L15.3622 18.1956L27.8397 5.33334Z"
-              fill="#093159" />
-            <path
-              d="M29.1141 6.56885L16.5763 19.4577C16.2536 19.7889 15.8171 19.9747 15.3621 19.9747C14.9072 19.9747 14.4707 19.7889 14.148 19.4577L1.72214 6.66663C1.68394 6.81155 1.66369 6.96089 1.66187 7.11107V24.8888C1.66187 25.3603 1.84331 25.8125 2.16629 26.1459C2.48927 26.4793 2.92733 26.6666 3.38409 26.6666H27.4952C27.952 26.6666 28.39 26.4793 28.713 26.1459C29.036 25.8125 29.2174 25.3603 29.2174 24.8888V7.11107C29.2106 6.92587 29.1757 6.74292 29.1141 6.56885ZM4.56381 24.8888H3.36687V23.6177L9.62714 17.2088L10.8413 18.4622L4.56381 24.8888ZM27.478 24.8888H26.2724L19.9949 18.4622L21.2091 17.2088L27.4694 23.6177L27.478 24.8888Z"
-              fill="#093159" />
-          </svg>
-        </div>
+
+        <svg width="20" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M27.8395 5.38705C27.7221 5.37456 27.6038 5.37456 27.4864 5.38705H3.37533C3.2208 5.38951 3.06729 5.41343 2.91895 5.45816L15.362 18.2493L27.8395 5.38705Z"
+            fill="#3C3C3C" />
+          <path
+            d="M29.1143 6.62256L16.5766 19.5114C16.2539 19.8426 15.8174 20.0284 15.3624 20.0284C14.9074 20.0284 14.4709 19.8426 14.1482 19.5114L1.72239 6.72034C1.68419 6.86526 1.66393 7.0146 1.66211 7.16478V24.9426C1.66211 25.4141 1.84356 25.8662 2.16654 26.1996C2.48952 26.533 2.92757 26.7203 3.38433 26.7203H27.4954C27.9522 26.7203 28.3903 26.533 28.7132 26.1996C29.0362 25.8662 29.2177 25.4141 29.2177 24.9426V7.16478C29.2108 6.97959 29.1759 6.79663 29.1143 6.62256V6.62256ZM4.56405 24.9426H3.36711V23.6714L9.62739 17.2626L10.8416 18.5159L4.56405 24.9426ZM27.4782 24.9426H26.2727L19.9952 18.5159L21.2093 17.2626L27.4696 23.6714L27.4782 24.9426Z"
+            fill="#3C3C3C" />
+        </svg>
+
+
         <a href="mailto:+ 011 415102">enquiry@myspaceinnovation.com</a>
       </div>
       <div class="contact-content">
-        <div class="svg-cover">
-          <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <ellipse cx="17" cy="29.5692" rx="17" ry="3.69611" fill="#D9D9D9" />
-            <path
-              d="M28.3337 11.1171C28.3337 16.1777 21.4274 25.1872 18.3993 28.9044C17.6732 29.7903 16.3274 29.7903 15.6014 28.9044C12.5201 25.1872 5.66699 16.1777 5.66699 11.1171C5.66699 4.97721 10.741 0 17.0003 0C23.2573 0 28.3337 4.97721 28.3337 11.1171Z"
-              fill="#093159" />
-          </svg>
-        </div>
+
+        <svg width="20" viewBox="0 0 24 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.3337 11.1542C23.3337 16.2317 16.4274 25.2713 13.3993 29.0009C12.6732 29.8898 11.3274 29.8898 10.6014 29.0009C7.52012 25.2713 0.666992 16.2317 0.666992 11.1542C0.666992 4.99383 5.74102 0 12.0003 0C18.2573 0 23.3337 4.99383 23.3337 11.1542Z"
+            fill="#3C3C3C" />
+        </svg>
+
 
         <a>28 kilo Chowk, Dhulikhel, Nepal 45210 </a>
       </div>
     </div>
     <div class="other-platforms">
       <p>Other Platforms:</p>
+      <img src="./sociallinkedin.png" alt="MySpace Logo" />
+      <img src="./socialwhatsapp.png" alt="MySpace Logo" />
+      <img src="./socialskype.png" alt="MySpace Logo" />
+
     </div>
   </section>
-  <div>
+  <div class="map-wrapper">
     <iframe src="https://maps.google.com/maps?q=dhulikhel&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-      frameborder="0" width="100%" height="550px"  scrolling="no" aria-controls="none" ></iframe>
+      frameborder="0" width="100%" height="550px" scrolling="no" aria-controls="none"></iframe>
 
   </div>
   <section class="footer container">
@@ -496,7 +647,7 @@
           </ul>
         </div>
       </div>
-      <div class="quick-message">
+      <div class="quick-message" id="quick-message">
         <p class="form-title">Send us a quick message.</p>
         <form action="#" method="post">
           <div class="form-wrapper">
@@ -550,6 +701,8 @@
 
   <script src="script.js"></script>
   <script src="careers.js"></script>
+  <script src="aboutUs.js"></script>
+  <script src="productslist.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -568,6 +721,159 @@
       jobInfo.classList.add("hidden");
       toggleBtn.classList.remove("hidden");
     }
+  </script>
+  <script>
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+    var swipperCards = document.querySelectorAll('.card');
+
+    readMoreBtns.forEach(function (btn, index) {
+      btn.addEventListener('click', function () {
+        var card = swipperCards[index];
+
+        var cardText = card.querySelector('.card-text');
+
+        if (card.classList.contains('expanded')) {
+          card.classList.remove('expanded');
+
+          btn.textContent = 'Read more';
+        } else {
+
+          card.classList.add('expanded');
+
+          btn.textContent = 'Read less';
+
+        }
+      });
+    });
+
+    // Logic to show/hide "Read more" button based on text length
+    swipperCards.forEach(function (card, index) {
+      var cardText = card.querySelector('.card-text');
+      var readMoreBtn = readMoreBtns[index];
+
+      if (cardText.textContent.length > 300) {
+        readMoreBtn.style.display = 'block';
+      } else {
+        readMoreBtn.style.display = 'block';
+      }
+    });
+
+
+
+
+  </script>
+  <script>
+    const slider = document.querySelector(".slider");
+    const cards = document.querySelectorAll(".card");
+    const prevButton = document.querySelector(".prev");
+    const nextButton = document.querySelector(".next");
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth + 60;
+    function updateSlider() {
+      const newPosition = -currentIndex * cardWidth;
+      slider.style.transform = `translateX(${newPosition}px)`;
+
+      cards.forEach((card) => card.classList.remove("blue"));
+    }
+
+    function nextSlide() {
+      currentIndex++;
+      if (currentIndex > cards.length - 4) {
+
+        currentIndex = 0;
+      }
+      updateSlider();
+      toggleActiveButton(nextButton, prevButton);
+    }
+
+    function prevSlide() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = cards.length - 4;
+      }
+      updateSlider();
+      toggleActiveButton(prevButton, nextButton);
+    }
+
+    function toggleActiveButton(activeButton, inactiveButton) {
+      activeButton.classList.add("active");
+      inactiveButton.classList.remove("active");
+    }
+
+
+    updateSlider();
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      spaceBetween: 30,
+
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        540: {
+          slidesPerView: 1,
+        },
+
+        768: {
+          slidesPerView: 2,
+        },
+
+        1024: {
+          slidesPerView: 3,
+        },
+        1250: {
+          slidesPerView: 4,
+        },
+      },
+    });
+  </script>
+  <script>
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+    var swipperCards = document.querySelectorAll('.card');
+
+    readMoreBtns.forEach(function (btn, index) {
+      btn.addEventListener('click', function () {
+        var card = swipperCards[index];
+
+        var cardText = card.querySelector('.card-text');
+
+        if (card.classList.contains('expanded')) {
+          card.classList.remove('expanded');
+
+          btn.textContent = 'Read more';
+        } else {
+
+          card.classList.add('expanded');
+
+          btn.textContent = 'Read less';
+
+        }
+      });
+    });
+
+    // Logic to show/hide "Read more" button based on text length
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+    readMoreBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var card = btn.closest('.card');
+        card.classList.toggle('expanded');
+
+        // Toggle button text
+        if (card.classList.contains('expanded')) {
+          btn.textContent = 'Read less';
+        } else {
+          btn.textContent = 'Read more';
+        }
+      });
+    });
+
+
+
+
   </script>
 </body>
 

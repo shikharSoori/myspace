@@ -21,33 +21,35 @@ var careers = [
     positionStatus: "Open",
   },
 ];
-
 function displayCareers() {
   var careersListDiv = document.getElementById("careersList");
   careersListDiv.innerHTML = ""; // Clear existing content
 
   careers.forEach(function (career) {
     var careerDiv = document.createElement("div");
+    careerDiv.classList.add("careersItem");
 
-    var nameStrong = document.createElement("strong");
-    nameStrong.textContent = career.careerName;
-    careerDiv.appendChild(nameStrong);
+    var innerDiv = document.createElement("div");
 
-    var areaP = document.createElement("p");
-    areaP.textContent = "Area: " + career.area;
-    careerDiv.appendChild(areaP);
+    var nameH1 = document.createElement("h1");
+    nameH1.textContent = career.careerName;
+    innerDiv.appendChild(nameH1);
 
-    var jobTypeP = document.createElement("p");
-    jobTypeP.textContent = "Job Type: " + career.jobType;
-    careerDiv.appendChild(jobTypeP);
+    var locationP = document.createElement("p");
+    locationP.textContent =
+      career.area +
+      " | " +
+      career.jobType +
+      " | " +
+      career.numberOfCandidates +
+      " Candidates";
+    innerDiv.appendChild(locationP);
 
-    var candidatesP = document.createElement("p");
-    candidatesP.textContent =
-      "Number of Candidates: " + career.numberOfCandidates;
-    careerDiv.appendChild(candidatesP);
+    careerDiv.appendChild(innerDiv);
 
+    // Add "Application Closed" status outside inner div
     var statusP = document.createElement("p");
-    statusP.textContent = "Position Status: " + career.positionStatus;
+    statusP.textContent = "Application " + career.positionStatus;
     careerDiv.appendChild(statusP);
 
     careersListDiv.appendChild(careerDiv);

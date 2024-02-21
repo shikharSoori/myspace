@@ -9,8 +9,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100&family=Quicksand:wght@400;500;600;700&display=swap"
     rel="stylesheet" />
-
-  <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+  <title>MySpace Innovation</title>
   <style>
     .hidden {
       display: none !important;
@@ -38,20 +38,20 @@
 
     <div class="nav-links">
       <hr />
-      <a href="#about-us">
-        <div>About Us</div> <span></span>
+      <a href="#about-us" class="active">
+        About Us
       </a>
       <a href="#services">
-        <div>Services</div> <span></span>
+       Services 
       </a>
       <a href="#products">
-        <div>Products</div> <span></span>
+      Products 
       </a>
       <a href="#careers">
-        <div>Careers</div> <span></span>
+        Careers
       </a>
-      <a href="#contact">
-        <div>Contact</div> <span></span>
+      <a href="#contant">
+        Contact
       </a>
       <hr />
       <div class="appointment-btn-sm">
@@ -226,6 +226,15 @@
 
 
       </div>
+      <div class="awards-achievement">
+        <div class="content">
+
+          <h4>Awards and achievement</h4>
+         
+
+          <iframe width="100%" height="350" src="https://www.youtube.com/embed/a3ICNMQW7Ok?si=vSrPVZ0PKvmZuOE7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+      </div>
       <div class="our-success">
 
         <div class="content">
@@ -244,6 +253,7 @@
         </div>
 
       </div>
+    
     </div>
 
   </section>
@@ -759,6 +769,7 @@
   <script src="careers.js"></script>
   <script src="aboutUs.js"></script>
   <script src="productslist.js"></script>
+  <script src="navbar.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
@@ -802,6 +813,21 @@
       });
     });
 
+    var readMoreBtns = document.querySelectorAll('.read-more-btn');
+
+readMoreBtns.forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var card = btn.closest('.card');
+    card.classList.toggle('expanded');
+
+    // Toggle button text
+    if (card.classList.contains('expanded')) {
+      btn.textContent = 'Read less';
+    } else {
+      btn.textContent = 'Read more';
+    }
+  });
+});
     // Logic to show/hide "Read more" button based on text length
     swipperCards.forEach(function (card, index) {
       var cardText = card.querySelector('.card-text');
@@ -818,48 +844,7 @@
 
 
   </script>
-  <script>
-    const slider = document.querySelector(".slider");
-    const cards = document.querySelectorAll(".card");
-    const prevButton = document.querySelector(".prev");
-    const nextButton = document.querySelector(".next");
-    let currentIndex = 0;
-    const cardWidth = cards[0].offsetWidth + 60;
-    function updateSlider() {
-      const newPosition = -currentIndex * cardWidth;
-      slider.style.transform = `translateX(${newPosition}px)`;
 
-      cards.forEach((card) => card.classList.remove("blue"));
-    }
-
-    function nextSlide() {
-      currentIndex++;
-      if (currentIndex > cards.length - 4) {
-
-        currentIndex = 0;
-      }
-      updateSlider();
-      toggleActiveButton(nextButton, prevButton);
-    }
-
-    function prevSlide() {
-      currentIndex--;
-      if (currentIndex < 0) {
-        currentIndex = cards.length - 4;
-      }
-      updateSlider();
-      toggleActiveButton(prevButton, nextButton);
-    }
-
-    function toggleActiveButton(activeButton, inactiveButton) {
-      activeButton.classList.add("active");
-      inactiveButton.classList.remove("active");
-    }
-
-
-    updateSlider();
-  </script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script>
     var swiper = new Swiper(".swiper-container", {
       spaceBetween: 30,
@@ -886,65 +871,7 @@
       },
     });
   </script>
-  <script>
-    var readMoreBtns = document.querySelectorAll('.read-more-btn');
-    var swipperCards = document.querySelectorAll('.card');
-
-    readMoreBtns.forEach(function (btn, index) {
-      btn.addEventListener('click', function () {
-        var card = swipperCards[index];
-
-        var cardText = card.querySelector('.card-text');
-
-        if (card.classList.contains('expanded')) {
-          card.classList.remove('expanded');
-
-          btn.textContent = 'Read more';
-        } else {
-
-          card.classList.add('expanded');
-
-          btn.textContent = 'Read less';
-
-        }
-      });
-    });
-
-    // Logic to show/hide "Read more" button based on text length
-    var readMoreBtns = document.querySelectorAll('.read-more-btn');
-
-    readMoreBtns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var card = btn.closest('.card');
-        card.classList.toggle('expanded');
-
-        // Toggle button text
-        if (card.classList.contains('expanded')) {
-          btn.textContent = 'Read less';
-        } else {
-          btn.textContent = 'Read more';
-        }
-      });
-    });
-
-
-
-
-  </script>
-  <script>
-    window.onscroll = function () { myFunction() };
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
-
-    function myFunction() {
-      if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    }
-  </script>
+  
 </body>
 
 </html>

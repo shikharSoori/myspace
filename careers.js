@@ -23,7 +23,7 @@ var careers = [
 ];
 function displayCareers() {
   var careersListDiv = document.getElementById("careersList");
-  careersListDiv.innerHTML = ""; // Clear existing content
+  careersListDiv.innerHTML = ""; 
 
   careers.forEach(function (career) {
     var careerDiv = document.createElement("div");
@@ -47,7 +47,6 @@ function displayCareers() {
 
     careerDiv.appendChild(innerDiv);
 
-    // Add "Application Closed" status outside inner div
     var statusP = document.createElement("p");
     statusP.textContent = "Application " + career.positionStatus;
     careerDiv.appendChild(statusP);
@@ -56,13 +55,11 @@ function displayCareers() {
   });
 }
 
-// Function to toggle job info visibility
 function closeJobs() {
   var jobInfo = document.getElementById("jobInfo");
   jobInfo.classList.add("hidden");
 }
 
-// Display careers when the page loads
 window.onload = function () {
   displayCareers();
 };

@@ -1140,6 +1140,9 @@ a:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  section {
+    top: 80px !important;
+  }
   .container {
     padding: 60px 100px;
   }

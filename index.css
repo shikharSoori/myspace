@@ -5,20 +5,33 @@
   list-style: none;
   box-sizing: border-box;
 }
+:root {
+  --font-1: Quicksand;
+  --font-2: Montserrat;
+  --btn-hover-bg: #fe8630;
+  --btn-bg: #007b96;
+}
 html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: montserrat;
+  font-family: var(--font-1);
 }
 .container {
   padding: 0 150px;
+}
+button:hover {
+  cursor: pointer;
+}
+a:hover {
+  cursor: pointer;
 }
 .container.margin {
   /* padding: 0; */
   margin: 0 150px;
 }
 .nav {
+  background-color: white;
   padding-top: 10px;
   padding-bottom: 10px;
   display: flex;
@@ -36,7 +49,7 @@ body {
   }
   .logo {
     img {
-      height: 50px;
+      height: 65px;
       width: auto;
     }
   }
@@ -50,7 +63,6 @@ body {
       display: flex;
       flex-direction: column;
       a {
-        font-family: Montserrat;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
@@ -165,7 +177,6 @@ body {
 
   flex-direction: column;
   h1 {
-    font-family: Quicksand;
     font-size: 64px;
     font-weight: 700;
     line-height: 80px;
@@ -256,6 +267,9 @@ body {
         justify-content: start;
         align-items: center;
         width: 32%;
+        img {
+          border-radius: 50%;
+        }
       }
     }
   }
@@ -292,7 +306,7 @@ body {
 
     .column {
       height: 200px;
-      background: #0094b5;
+      background: #166490;
       width: 28%;
       border-radius: 0 50px 0 50px;
       color: white;
@@ -301,15 +315,11 @@ body {
       align-items: center;
       padding: 30px;
       .card {
+        padding: 0 50px;
         .card-text {
-          text-align: center;
+          display: flex;
+          gap: 20px;
           font-size: 18px;
-          line-height: 30px;
-        }
-        strong {
-          font-size: 24px;
-          text-align: center;
-          width: 100%;
         }
       }
     }
@@ -473,7 +483,6 @@ body {
       border-radius: 2px;
       div {
         h1 {
-          font-family: Quicksand;
           font-size: 22px;
           font-weight: 700;
           line-height: 28px;
@@ -542,6 +551,9 @@ body {
     display: flex;
     align-items: center;
     gap: 15px;
+    img {
+      width: 40px;
+    }
   }
 }
 .map-wrapper {
@@ -571,6 +583,10 @@ body {
         line-height: 28px;
         a {
           color: #e4e4e4;
+        }
+        a:hover {
+          text-decoration: underline;
+          text-underline-offset: 0.3em
         }
       }
     }
@@ -617,14 +633,17 @@ body {
           color: white;
           padding: 10px 20px;
           font-size: 14px;
-          width: min-content;
+          width: max-content;
           border: none;
+          display: flex;
+          gap: 10px;
+          align-items: center;
         }
         .form-wrapper {
           width: 100%;
           display: flex;
           flex-wrap: wrap;
-          gap: 12px;
+          gap: 18px 0px;
           justify-content: space-between;
         }
         .form-input {
@@ -644,7 +663,7 @@ body {
 
         .form-input input {
           width: 100%;
-          height: 35px;
+          height: 40px;
           font-size: 16px;
           padding: 10px;
           outline: none;
@@ -673,10 +692,16 @@ body {
 
           transition: 0.3s;
         }
+        .form-input.message {
+          label {
+            top: 14px;
+          }
+        }
 
         .form-input input:focus + label,
         .form-input input:not(:placeholder-shown) + label {
           top: -7px;
+          left: 0;
           font-size: 0.8rem;
           color: #e4e4e4;
           padding: 7px;
@@ -684,6 +709,7 @@ body {
         .form-input textarea:focus + label,
         .form-input textarea:not(:placeholder-shown) + label {
           top: -7px;
+          left: 0;
           font-size: 0.8rem;
           color: #e4e4e4;
           padding: 7px;
@@ -724,6 +750,12 @@ body {
       color: #e4e4e4;
       display: flex;
       font-weight: 300;
+      gap: 10px;
+      button {
+        background: none;
+        color: #e4e4e4;
+        border: none;
+      }
     }
   }
 }
@@ -978,7 +1010,7 @@ body {
 }
 @media screen and (max-width: 1400px) {
 }
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1425px) {
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .about-us {
@@ -1106,6 +1138,7 @@ body {
         .column {
           width: 45%;
           img {
+            border-radius: 50%;
             height: 75px;
           }
         }
@@ -1462,4 +1495,16 @@ body {
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 360px) {
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+section {
+  position: relative;
+  top: 110px;
 }

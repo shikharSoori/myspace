@@ -19,13 +19,13 @@
 </head>
 
 <body>
-  <div class="nav container">
+  <header class="nav container" id="navbar">
     <input type="checkbox" id="nav-check">
     <div class="nav-header">
       <div class="nav-title">
-        <div class="logo">
+        <a class="logo" href="#">
           <img src="./Logo.png" alt="MySpace Logo" />
-        </div>
+        </a>
       </div>
     </div>
     <div class="nav-btn">
@@ -75,12 +75,12 @@
       <button>Book Appointment</button>
     </div>
 
-  </div>
+  </header>
 
-  <div class="hero container">
+  <section class="hero container" id="hero">
     <h1>Turn your innovative <br /> ideas into <span>reality</span></h1>
     <button>Book Appointment</button>
-  </div>
+  </section>
   <section class="about-us container" id="about-us">
     <div class="who-we-are">
 
@@ -256,46 +256,65 @@
       <div class="column">
         <div class="card">
 
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+          <div class="card-text">
+            <div>1.</div>
+            <div> Robust, reliable and highly scalable solutions</div>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="card">
 
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+          <div class="card-text">
+            <div>2.</div>
+            <div> Timely delivery and resonable price.</div>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="card">
 
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+          <div class="card-text">
+            <div>3.</div>
+            <div> Client-Centric with highest standard of integrity and transparency.</div>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="card">
 
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+          <div class="card-text">
+            <div>4.</div>
+            <div> Faster to adjust to changing requirement.</div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="column">
+        <div class="card">
+
+          <div class="card-text">
+            <div>5.</div>
+            <div> Responsive team and long-term support.</div>
+          </div>
         </div>
       </div>
       <div class="column">
         <div class="card">
 
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
+          <div class="card-text">
+            <div>6.</div>
+            <div> World-Class Software Engineering Approach.</div>
+          </div>
         </div>
       </div>
-      <div class="column">
-        <div class="card">
-
-          <p class="card-text"><strong>1</strong><br /> Robust, reliable and highly scalable solutions</p>
-        </div>
-      </div>
-
-
-    </div>
   </section>
 
 
-  <div style="background-color: #F9F9F9;" id="services">
+  <section style="background-color: #F9F9F9;" id="services">
     <div class="swiper-container container  margin">
       <div class="header">
         <h1>Our Services</h1>
@@ -427,7 +446,7 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </div>
+  </section>
   <section class="platforms container">
     <div class="header">
       <h1>Platforms we work on?</h1>
@@ -637,28 +656,28 @@
     </div>
     <div class="other-platforms">
       <p>Other Platforms:</p>
-      <img src="./sociallinkedin.png" alt="MySpace Logo" />
-      <img src="./socialwhatsapp.png" alt="MySpace Logo" />
-      <img src="./socialskype.png" alt="MySpace Logo" />
+      <a href="www.linkedin.com" target="_blank"><img src="./sociallinkedin.png" alt="linkiedin" /></a>
+      <a href="www.whatsapp.com" target="_blank"><img src="./socialwhatsapp.png" alt="Whatsapp" /></a>
+      <a href="www.skype.com" target="_blank"><img src="./socialskype.png" alt="Skype" /></a>
 
     </div>
   </section>
-  <div class="map-wrapper">
+  <section class="map-wrapper">
     <iframe src="https://maps.google.com/maps?q=dhulikhel&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
       frameborder="0" width="100%" height="550px" scrolling="no" aria-controls="none"></iframe>
 
-  </div>
+  </section>
   <section class="footer container">
     <div class="footer-upper">
       <div class="go-to">
-        <img src="./footerlogo.png" alt="MySpace Logo" />
+        <a href="#"><img src="./footerlogo.png" alt="MySpace Logo" /></a>
         <p>Go To:</p>
         <ul>
-          <li><a href="#">Our Services</a></li>
-          <li><a>Products</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Contact Us</a></li>
-          <li><a>Book Appointment</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about-us">About Us</a></li>
+          <li><a href="#contant">Contact Us</a></li>
+          <li><a href="#hero">Book Appointment</a></li>
         </ul>
       </div>
       <div class="opening-hours">
@@ -702,19 +721,19 @@
             </div>
             <div class="form-input">
               <input type="contact" placeholder="Contact Number" id="contact">
-              <label for="contact">Email Address</label>
+              <label for="contact">Contactn Number</label>
             </div>
             <div class="form-input address">
-              <input type="contact" placeholder="Contact Number" id="contact">
-              <label for="contact">Email Address</label>
+              <input type="address" placeholder="Contact Number" id="contact">
+              <label for="address">Address</label>
             </div>
-            <div class="form-input address">
+            <div class="form-input address message">
               <textarea id="message" type="message" placeholder="Write something.."></textarea>
-              <label for="message">Email Address</label>
+              <label for="message">Message</label>
             </div>
           </div>
           <button class="submit-btn">
-            Send
+            Send <img src="./paperplane.png" />
           </button>
         </form>
       </div>
@@ -729,9 +748,9 @@
         <p>Legals</p>
       </div>
       <div class="language-convert">
-        <p class="active">en</p>
-        |
-        <p>ne</p>
+        <button class="active">en </butto>
+          |
+          <button> ne</button>
       </div>
     </div>
   </section>
@@ -911,6 +930,20 @@
 
 
 
+  </script>
+  <script>
+    window.onscroll = function () { myFunction() };
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
   </script>
 </body>
 

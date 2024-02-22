@@ -1434,7 +1434,11 @@ a:hover {
     flex-direction: column;
     gap: 40px;
   }
+  .get-in-touch .container {
+    flex-direction: column;
+  }
   .get-in-touch .other-platforms {
+    margin-top: 20px;
     flex-direction: column;
     align-items: start;
   }

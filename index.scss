@@ -1120,7 +1120,10 @@ a:hover {
   }
 
   .footer {
-    padding-bottom: 20px !important;
+    .container {
+      padding-top: 60px !important;
+      padding-bottom: 20px !important;
+    }
     .footer-upper {
       display: flex;
       -webkit-flex-wrap: wrap; /* Safari 6.1+ */

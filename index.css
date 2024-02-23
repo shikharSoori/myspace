@@ -1080,7 +1080,8 @@ a:hover {
   .container {
     padding: 0 100px;
   }
-  .footer {
+  .footer .container {
+    padding-top: 60px !important;
     padding-bottom: 20px !important;
   }
   .footer .footer-upper {

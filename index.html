@@ -958,81 +958,58 @@
     }
   </script>
   <script>
-    var readMoreBtns = document.querySelectorAll('.read-more-btn');
-    var swipperCards = document.querySelectorAll('.card');
+    document.addEventListener('DOMContentLoaded', function () {
+      var readMoreBtns = document.querySelectorAll('.read-more-btn');
+      var swipperCards = document.querySelectorAll('.splide__slide');
 
-    readMoreBtns.forEach(function (btn, index) {
-      btn.addEventListener('click', function () {
-        var card = swipperCards[index];
+      // Expand the first slide by default
+      swipperCards[2].classList.add('expanded');
+      readMoreBtns[2].textContent = 'Read less';
 
+      readMoreBtns.forEach(function (btn, index) {
+        btn.addEventListener('click', function () {
+          var card = swipperCards[index];
+          var cardText = card.querySelector('.card-text');
+
+          if (card.classList.contains('expanded')) {
+            card.classList.remove('expanded');
+            btn.textContent = 'Read more';
+            card.classList.add('inactive');
+          } else {
+            // Remove expanded class from all slides
+            swipperCards.forEach(function (slide, i) {
+              slide.classList.remove('expanded');
+              slide.classList.add('inactive');
+              readMoreBtns[i].textContent = 'Read more'; // Reset all buttons
+            });
+            // Add expanded class only to the current slide
+            card.classList.add('expanded');
+            card.classList.remove('inactive');
+            btn.textContent = 'Read less';
+          }
+        });
+      });
+
+      swipperCards.forEach(function (card, index) {
         var cardText = card.querySelector('.card-text');
+        var readMoreBtn = readMoreBtns[index];
 
-        if (card.classList.contains('expanded')) {
-          card.classList.remove('expanded');
-          btn.textContent = 'Read more';
+        if (cardText.textContent.length > 300) {
+          readMoreBtn.style.display = 'block';
         } else {
-          card.classList.add('expanded');
-          btn.textContent = 'Read less';
+          readMoreBtn.style.display = 'none';
+        }
+      });
 
+      // Add the inactive class to all slides except the expanded one
+      swipperCards.forEach(function (card) {
+        if (!card.classList.contains('expanded')) {
+          card.classList.add('inactive');
         }
       });
     });
 
-    var readMoreBtns = document.querySelectorAll('.read-more-btn');
 
-    readMoreBtns.forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        var card = btn.closest('.card');
-        card.classList.toggle('expanded');
-
-        if (card.classList.contains('expanded')) {
-          btn.textContent = 'Read less';
-        } else {
-          btn.textContent = 'Read more';
-        }
-      });
-    });
-    swipperCards.forEach(function (card, index) {
-      var cardText = card.querySelector('.card-text');
-      var readMoreBtn = readMoreBtns[index];
-
-      if (cardText.textContent.length > 300) {
-        readMoreBtn.style.display = 'block';
-      } else {
-        readMoreBtn.style.display = 'block';
-      }
-    });
-
-
-
-
-  </script>
-
-  <script>
-    var swiper = new Swiper(".swiper-container", {
-      spaceBetween: 30,
-
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        540: {
-          slidesPerView: 1,
-        },
-
-        768: {
-          slidesPerView: 2,
-        },
-
-        1024: {
-          slidesPerView: 3,
-        },
-        1250: {
-          slidesPerView: 4,
-        },
-      },
-    });
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.0.9/dist/js/splide.min.js"></script>
@@ -1041,11 +1018,15 @@
       new Splide('.splide', {
         type: 'slide', // or 'loop' or 'fade'
         rewind: true, // Whether the slider should rewind to the first slide when it reaches the last slide
+        type: 'loop',
+        drag: 'free',
+        snap: true,
 
         perPage: 4,
         perMove: 1,
         gap: "20px",
         pagingation: false,
+        // autoWidth: true,
         breakpoints: {
           540: {
             perPage: 1,

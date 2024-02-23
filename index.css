@@ -1304,8 +1304,8 @@ a:hover {
     padding: 0px 20px;
   }
   .about-us {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .about-us .who-we-are {
     flex-direction: column;
@@ -1320,8 +1320,8 @@ a:hover {
     width: 100%;
   }
   .about-us .our-mission {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     flex-direction: column;
   }
   .about-us .our-mission .content {
@@ -1333,11 +1333,8 @@ a:hover {
     height: auto;
   }
   .about-us .our-team {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .about-us .our-team .row {
-    margin-top: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .about-us .our-team .row .column {
     width: 100%;
@@ -1346,8 +1343,8 @@ a:hover {
     padding-top: 40px;
   }
   .why-choose-us .container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .why-choose-us .row {
     gap: 40px;
@@ -1358,8 +1355,8 @@ a:hover {
     width: 100%;
   }
   .platforms {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .platforms .platforms-list {
     display: flex; /* Safari 6.1+ */
@@ -1371,8 +1368,8 @@ a:hover {
     width: 100%;
   }
   .products {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .products .product-list {
     justify-content: center;
@@ -1384,8 +1381,8 @@ a:hover {
     width: 100%;
   }
   .careers {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .careers p {
     margin-left: 0;
@@ -1401,8 +1398,8 @@ a:hover {
     font-size: 12px;
   }
   .get-in-touch {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     flex-direction: column;
     gap: 40px;
   }
@@ -1421,7 +1418,7 @@ a:hover {
     height: 200px;
   }
   .footer {
-    padding-top: 40px;
+    padding-top: 60px;
     /* padding-bottom: 40px; */
   }
   .footer .footer-upper {

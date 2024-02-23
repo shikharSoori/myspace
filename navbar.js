@@ -1,4 +1,10 @@
 window.addEventListener("DOMContentLoaded", function () {
+  var lastScrollTop = 0; // To keep track of the last scroll position
+  var navbar = document.getElementById("navbar");
+  var navbarHeight = navbar.offsetHeight; // Height of the navbar
+  console.log(navbarHeight)
+  var section = document.querySelector("section");
+
   function storeScrollPosition() {
     sessionStorage.setItem("scrollPosition", window.scrollY);
   }
@@ -12,62 +18,43 @@ window.addEventListener("DOMContentLoaded", function () {
   }
 
   restoreScrollPosition();
-  var navbar = document.getElementById("navbar");
-  var sticky = navbar.offsetTop;
-
-  if (window.scrollY >= sticky) {
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-  }
 
   var sections = document.querySelectorAll("section");
   var navLinks = document.querySelectorAll(".nav-links a");
 
-  var scrollPosition = window.scrollY;
-
-  sections.forEach(function (section) {
-    var sectionTop = section.offsetTop;
-    var sectionHeight = section.clientHeight;
-
-    if (
-      scrollPosition >= sectionTop - sectionHeight * 0.25 &&
-      scrollPosition < sectionTop + sectionHeight - sectionHeight * 0.25
-    ) {
-      var sectionId = section.getAttribute("id");
-      navLinks.forEach(function (link) {
-        if (link.getAttribute("href").slice(1) === sectionId) {
-          link.classList.add("active");
-        } else {
-          link.classList.remove("active");
-        }
-      });
-    }
-  });
-
   window.addEventListener("scroll", function () {
-    // Sticky Navbar
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop;
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    if (window.scrollY >= sticky) {
-      navbar.classList.add("sticky");
+    // Determine scrolling direction
+    if (scrollTop > lastScrollTop) {
+      // Scrolling down
+      navbar.style.transform = "translateY(-" + navbarHeight + "px)";
+      sections.forEach(function (section) {
+        section.style.position = "relative";
+        section.style.top = 0;
+      });
+      navbar.style.top = "0";
+      navbar.style.display = "none";
     } else {
-      navbar.classList.remove("sticky");
+      // Scrolling up
+      navbar.style.transform = "translateY(0)";
+      sections.forEach(function (section) {
+        section.style.position = "relative";
+        section.style.top = navbarHeight + "px";
+      });
+      navbar.classList.add("sticky");
+      navbar.style.display = "flex";
+
     }
 
-    var sections = document.querySelectorAll("section");
-    var navLinks = document.querySelectorAll(".nav-links a");
-
-    var scrollPosition = window.scrollY;
-
+    // Update navigation links based on the section in view
     sections.forEach(function (section) {
       var sectionTop = section.offsetTop;
       var sectionHeight = section.clientHeight;
 
       if (
-        scrollPosition >= sectionTop - sectionHeight * 0.25 &&
-        scrollPosition < sectionTop + sectionHeight - sectionHeight * 0.25
+        scrollTop >= sectionTop - sectionHeight * 0.25 &&
+        scrollTop < sectionTop + sectionHeight - sectionHeight * 0.25
       ) {
         var sectionId = section.getAttribute("id");
         navLinks.forEach(function (link) {
@@ -79,6 +66,8 @@ window.addEventListener("DOMContentLoaded", function () {
         });
       }
     });
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // For Mobile or negative scrolling
 
     storeScrollPosition();
   });

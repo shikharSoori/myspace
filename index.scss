@@ -131,8 +131,9 @@ a:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 .header {
-  margin-left: -30px;
-  margin-right: -30px;
+  margin-bottom: 70px;
+  margin-left: -40px;
+  margin-right: -40px;
   width: max-content;
   h1 {
     font-size: 20px;
@@ -146,6 +147,13 @@ a:hover {
     display: block;
     margin-bottom: 40px;
   }
+}
+.sub-title {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: 45px;
+  font-weight: 500;
+  font-size: 18px;
 }
 .hero {
   justify-content: center;
@@ -184,18 +192,14 @@ a:hover {
 .about-us {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .who-we-are {
+    padding-bottom: 100px;
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
     .content {
-      h4 {
-        font-weight: 500;
-        margin-bottom: 40px;
-        font-size: 18px;
-      }
     }
     .view-more-btn {
       margin-top: 40px;
@@ -223,17 +227,12 @@ a:hover {
     }
   }
   .our-mission {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    padding-bottom: 100px;
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
     .content {
-      h4 {
-        font-weight: 500;
-        margin-bottom: 40px;
-        font-size: 18px;
-      }
     }
 
     img {
@@ -246,8 +245,8 @@ a:hover {
     }
   }
   .our-team {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    padding-bottom: 100px;
     .row {
       display: flex;
       display: -webkit-flex;
@@ -263,30 +262,24 @@ a:hover {
         align-items: center;
         width: 32%;
         img {
+          height: 100px;
           border-radius: 50%;
         }
       }
     }
   }
   .awards-achievement {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 100px;
     text-align: center;
     h4 {
       width: 100%;
       text-align: left;
-      font-weight: 500;
-      margin-bottom: 40px;
-      font-size: 18px;
     }
   }
   .our-success {
-    padding-top: 60px;
-    h4 {
-      font-weight: 500;
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
+    padding-top: 100px;
+
     p {
       text-align: left;
     }
@@ -310,10 +303,10 @@ a:hover {
   }
 }
 .why-choose-us {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
+
   .reason-list {
     display: flex;
     display: -webkit-flex;
@@ -352,10 +345,10 @@ a:hover {
   display: flex;
   justify-content: center;
   background: #f9f9f9;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   .platforms-list {
-    margin-top: 40px;
+    margin-bottom: 0px;
     color: #474644;
     display: flex;
     display: -webkit-flex;
@@ -429,8 +422,8 @@ a:hover {
     display: flex;
     display: -webkit-flex;
     justify-content: end;
+    margin-top: 100px;
     button {
-      margin-top: 20px;
       background: var(--btn-bg);
       padding: 10px 20px;
       border-radius: 10px;
@@ -445,7 +438,6 @@ a:hover {
     }
   }
   .list-product {
-    margin-top: 40px;
     display: flex;
     display: -webkit-flex;
     justify-content: space-between;
@@ -455,7 +447,6 @@ a:hover {
     }
   }
   .product-list {
-    margin-top: 40px;
     color: #474644;
     display: flex;
     display: -webkit-flex;
@@ -488,21 +479,15 @@ a:hover {
 .careers {
   display: flex;
   justify-content: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  h4 {
-    font-size: 18px;
-    font-weight: normal;
-    font-weight: 500;
-    margin-bottom: 20px;
-    margin-top: 40px;
-  }
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   p {
     font-size: 16px;
     word-spacing: 2px;
     line-height: 24px;
-    margin-left: 20px;
+    margin-bottom: 100px;
+
     a {
       color: var(--btn-bg);
       cursor: pointer;
@@ -535,7 +520,6 @@ a:hover {
           color: var(--btn-bg);
         }
         p {
-          margin-left: 0;
           font-size: 14px;
         }
       }
@@ -546,7 +530,6 @@ a:hover {
     display: -webkit-flex;
     justify-content: end;
     button {
-      margin-top: 40px;
       background: var(--btn-bg);
       padding: 10px 20px;
       border-radius: 10px;
@@ -565,10 +548,14 @@ a:hover {
   .container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
+    .sub-title {
+      margin-bottom: 0;
+    }
   }
   background-color: #f9f9f9;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -622,7 +609,9 @@ a:hover {
   display: flex;
   justify-content: center;
   background: #474644;
-  padding-top: 60px;
+  .container {
+    padding-bottom: 20px;
+  }
   .footer-upper {
     display: flex;
     display: -webkit-flex;
@@ -691,6 +680,7 @@ a:hover {
         flex-direction: column;
         align-items: end;
         .submit-btn {
+          margin-top: 20px;
           border-radius: 20px;
           background: var(--btn-bg);
           box-shadow: 0px 4px 4px 0px #00000040;
@@ -1031,7 +1021,7 @@ a:hover {
 }
 @media screen and (min-width: 1024px) and (max-width: 1300px) {
   .nav {
-    padding: 0 100px !important;
+    // padding: 0 100px !important;
     .logo {
       img {
         height: 50px !important;
@@ -1040,7 +1030,7 @@ a:hover {
   }
   section {
     position: relative;
-    top: 76px !important;
+    // top: 76px !important;
   }
   .container {
     padding: 60px 100px;
@@ -1235,7 +1225,7 @@ a:hover {
 }
 @media screen and (max-width: 991px) {
   section {
-    top: 80px !important;
+    // top: 80px !important;
   }
   .container {
     padding: 60px 100px;
@@ -1406,6 +1396,7 @@ a:hover {
     padding-bottom: 40px;
     .who-we-are {
       flex-direction: column;
+      padding-bottom: 0;
       img {
         width: 100%;
         height: auto;
@@ -1413,9 +1404,6 @@ a:hover {
       .content {
         margin-top: 20px;
         width: 100%;
-        h4 {
-          margin-bottom: 20px;
-        }
       }
     }
     .our-mission {
@@ -1424,9 +1412,6 @@ a:hover {
       flex-direction: column;
       .content {
         width: 100%;
-        h4 {
-          margin-bottom: 20px;
-        }
       }
       img {
         margin-top: 20px;
@@ -1449,8 +1434,10 @@ a:hover {
     }
   }
   .why-choose-us {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    .container {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
     .row {
       gap: 40px;
       margin-top: 40px;
@@ -1552,6 +1539,9 @@ a:hover {
         margin-top: 40px;
         width: 100%;
         form {
+          .form-input {
+            width: 100%;
+          }
           .form-wrapper {
             gap: 10px;
           }
@@ -1604,5 +1594,5 @@ a:hover {
 
 section {
   position: relative;
-  top: 110px;
+  // top: 110px;
 }

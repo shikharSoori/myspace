@@ -477,17 +477,17 @@ a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.careers p {
+.careers > p {
   font-size: 16px;
   word-spacing: 2px;
   line-height: 24px;
   margin-bottom: 100px;
 }
-.careers p a {
+.careers > p a {
   color: var(--btn-bg);
   cursor: pointer;
 }
-.careers p br {
+.careers > p br {
   margin-bottom: 20px;
 }
 .careers #careersList {

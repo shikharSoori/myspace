@@ -379,6 +379,11 @@ a:hover {
   height: 36px;
 }
 
+.slider {
+  display: flex;
+  justify-content: center;
+}
+
 .products {
   color: white;
   display: flex;
@@ -477,17 +482,17 @@ a:hover {
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.careers > p {
+.careers p {
   font-size: 16px;
   word-spacing: 2px;
   line-height: 24px;
   margin-bottom: 100px;
 }
-.careers > p a {
+.careers p a {
   color: var(--btn-bg);
   cursor: pointer;
 }
-.careers > p br {
+.careers p br {
   margin-bottom: 20px;
 }
 .careers #careersList {
@@ -516,11 +521,17 @@ a:hover {
 }
 .careers #careersList .careersItem div p {
   font-size: 14px;
+  margin-bottom: 0;
+}
+.careers #careersList .careersItem p {
+  margin-bottom: 0;
+  max-width: 100px;
 }
 .careers #toggleBtn {
   display: flex;
   display: -webkit-flex;
   justify-content: end;
+  margin-top: 20px;
 }
 .careers #toggleBtn button {
   background: var(--btn-bg);
@@ -894,10 +905,7 @@ a:hover {
 
 .swiper-container {
   background: #f9f9f9;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-right: 20px;
-  padding-left: 20px;
+  padding-bottom: 100px;
   overflow: hidden;
   position: relative;
 }
@@ -907,7 +915,34 @@ a:hover {
   padding-top: 40px;
   align-items: center;
 }
-.swiper-container .card {
+
+.slider {
+  padding-top: 100px;
+}
+.slider .splide__arrow {
+  background: none;
+  color: var(--btn-bg);
+}
+.slider .splide__pagination {
+  display: none !important;
+}
+.slider .splide__arrow--prev {
+  left: -30px;
+}
+.slider .splide__arrow svg path {
+  fill: var(--btn-bg);
+}
+.slider .splide__arrow--next {
+  right: -30px;
+}
+.slider .splide__list {
+  display: flex;
+}
+.slider .splide__slide {
+  display: flex;
+  align-items: center;
+}
+.slider .card {
   border: 1px solid #474644;
   border-radius: 20px;
   display: flex;
@@ -915,14 +950,14 @@ a:hover {
   flex-direction: column;
   background: white;
 }
-.swiper-container .card img {
+.slider .card img {
   /* margin-bottom: 20px; */
   margin-top: 20px;
   height: 180px;
   -o-object-fit: contain;
      object-fit: contain;
 }
-.swiper-container .card .card-content {
+.slider .card .card-content {
   padding: 30px 15px;
   border-top: 1px solid #adadad;
   align-items: center;
@@ -934,7 +969,7 @@ a:hover {
   border-radius: 0 0 20px 20px;
   transform-style: preserve-3d;
 }
-.swiper-container .card .card-content .card-text {
+.slider .card .card-content .card-text {
   /* min-height: 160px; */
   width: 100%;
   font-size: 14px;
@@ -942,7 +977,7 @@ a:hover {
   line-height: 21px;
   text-align: center;
 }
-.swiper-container .card .card-content .read-more-btn {
+.slider .card .card-content .read-more-btn {
   background: none;
   border: 0;
   font-size: 12px;
@@ -950,28 +985,28 @@ a:hover {
   color: var(--btn-bg);
   margin-top: 10px;
 }
-.swiper-container .read-more-btn {
+.slider .read-more-btn {
   display: none;
 }
-.swiper-container .card.expanded .card-text {
+.slider .card.expanded .card-text {
   height: -moz-max-content;
   height: max-content;
   overflow: visible;
 }
-.swiper-container .card.expanded img {
+.slider .card.expanded img {
   height: 240px;
 }
-.swiper-container .card.expanded .card-content {
+.slider .card.expanded .card-content {
   background: #474644;
   border-radius: 0 0 20px 20px;
 }
-.swiper-container .card.expanded .card-content .card-text {
+.slider .card.expanded .card-content .card-text {
   color: white;
 }
-.swiper-container .card.expanded .card-content .read-more-btn {
+.slider .card.expanded .card-content .read-more-btn {
   color: white;
 }
-.swiper-container .card-text {
+.slider .card-text {
   height: 167px;
   overflow: hidden;
 }

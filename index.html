@@ -834,7 +834,6 @@
       var readMoreBtns = document.querySelectorAll('.read-more-btn');
       var swipperCards = document.querySelectorAll('.splide__slide');
 
-      // Expand the first slide by default
       swipperCards[2].classList.add('expanded');
       readMoreBtns[2].textContent = 'Read less';
 
@@ -848,13 +847,11 @@
             btn.textContent = 'Read more';
             card.classList.add('inactive');
           } else {
-            // Remove expanded class from all slides
             swipperCards.forEach(function (slide, i) {
               slide.classList.remove('expanded');
               slide.classList.add('inactive');
               readMoreBtns[i].textContent = 'Read more'; // Reset all buttons
             });
-            // Add expanded class only to the current slide
             card.classList.add('expanded');
             card.classList.remove('inactive');
             btn.textContent = 'Read less';
@@ -873,7 +870,6 @@
         }
       });
 
-      // Add the inactive class to all slides except the expanded one
       swipperCards.forEach(function (card) {
         if (!card.classList.contains('expanded')) {
           card.classList.add('inactive');
@@ -888,9 +884,8 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       new Splide('.splide', {
-        type: 'slide', // or 'loop' or 'fade'
-        rewind: true, // Whether the slider should rewind to the first slide when it reaches the last slide
-
+        type: 'slide',
+        rewind: true, 
         drag: 'free',
 
 

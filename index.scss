@@ -1132,9 +1132,9 @@ a:hover {
   }
 }
 @media screen and (min-width: 575px) and (max-width: 991px) {
-  .container {
-    padding: 0 100px;
-  }
+  // .container {
+  //   padding: 0 100px;
+  // }
 
   .footer {
     .container {
@@ -1286,7 +1286,8 @@ a:hover {
     // top: 80px !important;
   }
   .container {
-    padding: 60px 100px;
+    padding-left: 100px;
+    padding-right: 100px;
   }
   .nav {
     .container {
